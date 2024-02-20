@@ -1,0 +1,41 @@
+{
+  "FieldsExtractionController_getEntityValues" : {
+    "id" : "FieldsExtractionController_getEntityValues",
+    "crudOperationId" : null,
+    "service" : "FieldsExtractionService",
+    "controller" : "FieldsExtractionController",
+    "operationType" : null,
+    "type" : "string",
+    "wmServiceOperationInfo" : {
+      "name" : "getEntityValues",
+      "methodType" : "get",
+      "relativePath" : "/fieldsExtraction/entityValues",
+      "directPath" : null,
+      "httpMethod" : "get",
+      "parameters" : [ {
+        "name" : "entities",
+        "parameterType" : "query",
+        "required" : false,
+        "type" : "java.lang.String",
+        "readOnly" : false,
+        "contentType" : null
+      }, {
+        "name" : "documentURL",
+        "parameterType" : "query",
+        "required" : false,
+        "type" : "java.lang.String",
+        "readOnly" : false,
+        "contentType" : null
+      } ],
+      "definitions" : { },
+      "produces" : null,
+      "consumes" : null,
+      "proxySettings" : {
+        "web" : true,
+        "mobile" : true,
+        "withCredentials" : false
+      },
+      "securityDefinitions" : [ ]
+    }
+  }
+}

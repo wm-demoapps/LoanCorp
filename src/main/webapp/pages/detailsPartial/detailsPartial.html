@@ -1,0 +1,123 @@
+<wm-partial name="partial1">
+    <wm-container name="container1">
+        <wm-layoutgrid name="layoutgrid2" show="bind:pageParams.heading !== &quot;pd&quot;">
+            <wm-gridrow name="gridrow3" class="bg-clr">
+                <wm-gridcolumn columnwidth="6" name="gridcolumn9">
+                    <wm-label padding="unset" name="label1" class="h3 font-semibold" caption="bind:pageParams.heading" margin="0px unset"></wm-label>
+                </wm-gridcolumn>
+                <wm-gridcolumn columnwidth="6" name="gridcolumn16" horizontalalign="right">
+                    <wm-button class="btn-editicon btn-transparant" caption="" type="button" margin="unset" name="button1" iconclass="lc-edit" on-click="button1Click($event, widget)"></wm-button>
+                </wm-gridcolumn>
+            </wm-gridrow>
+        </wm-layoutgrid>
+    </wm-container>
+    <wm-container name="container3" show="bind:pageParams.heading !=&quot;Documents Uploaded&quot;" padding="15px 30px">
+        <wm-container name="container4" padding="10px unset 20px unset">
+            <wm-buttongroup name="buttongroup1" show="bind:pageParams.heading == &quot;Extract Field Information&quot;">
+                <wm-button class="btn-default selected" type="button" caption="Driver's License" name="DriverLicenseOrPassport" on-click="DriverLicenseOrPassportClick($event, widget)" fontunit="pt"></wm-button>
+                <wm-button class="btn-default" type="button" caption="W2 Form" name="w2Form" on-click="w2FormClick($event, widget)"></wm-button>
+            </wm-buttongroup>
+        </wm-container>
+        <wm-layoutgrid name="layoutgrid1">
+            <wm-gridrow name="gridrow1" padding="unset unset 2em unset">
+                <wm-gridcolumn columnwidth="3" name="gridcolumn1">
+                    <wm-label padding="unset" name="label2" textalign="left" class="text-muted p text-capitalize" caption="bind:getData('h',1)"></wm-label>
+                    <wm-label padding="unset" name="label3" caption="bind:getData('v',1)" class="text-capitalize p font-extrasmall font-medium"></wm-label>
+                </wm-gridcolumn>
+                <wm-gridcolumn columnwidth="3" name="gridcolumn6">
+                    <wm-label padding="unset" name="label4" class="text-muted p text-capitalize" caption="bind:getData('h',2)"></wm-label>
+                    <wm-label padding="unset" name="label5" caption="bind:getData('v',2)" class="text-capitalize p font-extrasmall font-medium"></wm-label>
+                </wm-gridcolumn>
+                <wm-gridcolumn columnwidth="3" name="gridcolumn5">
+                    <wm-label padding="unset" class="text-muted p text-capitalize" caption="bind:getData('h',3)" name="label6"></wm-label>
+                    <wm-label padding="unset" caption="bind:getData('v',3)" name="label7" class="p font-extrasmall font-medium"></wm-label>
+                </wm-gridcolumn>
+                <wm-gridcolumn columnwidth="3" name="gridcolumn2">
+                    <wm-label padding="unset" class="text-muted p text-uppercase" caption="bind:getData('h',4)" name="label8"></wm-label>
+                    <wm-label padding="unset" caption="bind:getData('v',4)" name="label9" class="text-capitalize p font-extrasmall font-medium"></wm-label>
+                </wm-gridcolumn>
+            </wm-gridrow>
+            <wm-gridrow name="gridrow2">
+                <wm-gridcolumn columnwidth="3" name="gridcolumn3">
+                    <wm-label padding="unset" class="text-muted p text-capitalize" caption="bind:getData('h',5)" name="label10"></wm-label>
+                    <wm-label padding="unset" caption="bind:getData('v',5)" name="label11" class="text-capitalize p font-extrasmall font-medium"></wm-label>
+                </wm-gridcolumn>
+                <wm-gridcolumn columnwidth="3" name="gridcolumn4">
+                    <wm-label padding="unset" class="text-muted p text-capitalize" caption="bind:getData('h',6)" name="label12"></wm-label>
+                    <wm-label padding="unset" caption="bind:getData('v',6)" name="label13" class="text-capitalize p font-extrasmall font-medium"></wm-label>
+                </wm-gridcolumn>
+                <wm-gridcolumn columnwidth="3" name="gridcolumn7">
+                    <wm-label padding="unset" class="text-muted p text-capitalize" caption="bind:getData('h',7)" name="label14"></wm-label>
+                    <wm-label padding="unset" caption="bind:getData('v',7)" name="label15" class="text-capitalize p font-extrasmall font-medium"></wm-label>
+                </wm-gridcolumn>
+                <wm-gridcolumn columnwidth="3" name="gridcolumn8"></wm-gridcolumn>
+            </wm-gridrow>
+        </wm-layoutgrid>
+        <wm-layoutgrid name="layoutgrid4" show="false">
+            <wm-gridrow name="gridrow6" padding="unset unset 2em unset">
+                <wm-gridcolumn columnwidth="3" name="gridcolumn15">
+                    <wm-label padding="unset" textalign="left" class="text-capitalize text-muted p" caption="bind:getData('h',1)" name="label20"></wm-label>
+                    <wm-label padding="unset" caption="bind:getData('v',1)" name="label21" class="text-capitalize p font-extrasmall font-medium"></wm-label>
+                </wm-gridcolumn>
+                <wm-gridcolumn columnwidth="3" name="gridcolumn16_1">
+                    <wm-label padding="unset" class="text-capitalize text-muted p" caption="bind:getData('h',2)" name="label22"></wm-label>
+                    <wm-label padding="unset" caption="bind:getData('v',2)" name="label23" class="text-capitalize p font-extrasmall font-medium"></wm-label>
+                </wm-gridcolumn>
+                <wm-gridcolumn columnwidth="3" name="gridcolumn17">
+                    <wm-label padding="unset" class="text-capitalize text-muted p" caption="bind:getData('h',3)" name="label24"></wm-label>
+                    <wm-label padding="unset" caption="bind:getData('v',3)" name="label25" class="text-capitalize p font-extrasmall font-medium"></wm-label>
+                </wm-gridcolumn>
+                <wm-gridcolumn columnwidth="3" name="gridcolumn18">
+                    <wm-label padding="unset" class="h6 text-capitalize" caption="bind:getData('h',4)" name="label26"></wm-label>
+                    <wm-label padding="unset" caption="bind:getData('v',4)" name="label27" class="text-capitalize"></wm-label>
+                </wm-gridcolumn>
+            </wm-gridrow>
+            <wm-gridrow name="gridrow7">
+                <wm-gridcolumn columnwidth="3" name="gridcolumn19">
+                    <wm-label padding="unset" class="text-muted p text-capitalize" caption="bind:getData('h',5)" name="label28"></wm-label>
+                    <wm-label padding="unset" caption="bind:getData('v',5)" name="label29" class="text-capitalize p font-extrasmall font-medium"></wm-label>
+                </wm-gridcolumn>
+                <wm-gridcolumn columnwidth="3" name="gridcolumn20">
+                    <wm-label padding="unset" class="text-muted p text-capitalize" caption="bind:getData('h',6)" name="label30"></wm-label>
+                    <wm-label padding="unset" caption="bind:getData('v',6)" name="label31" class="text-capitalize p font-extrasmall font-medium"></wm-label>
+                </wm-gridcolumn>
+                <wm-gridcolumn columnwidth="3" name="gridcolumn21">
+                    <wm-label padding="unset" class="text-muted p text-capitalize" caption="bind:getData('h',7)" name="label32"></wm-label>
+                    <wm-label padding="unset" caption="bind:getData('v',7)" name="label33" class="p font-extrasmall font-medium"></wm-label>
+                </wm-gridcolumn>
+                <wm-gridcolumn columnwidth="3" name="gridcolumn22"></wm-gridcolumn>
+            </wm-gridrow>
+        </wm-layoutgrid>
+    </wm-container>
+    <wm-container name="container2" show="bind:pageParams.heading ===&quot;Documents Uploaded&quot;" bordercolor="#d0c7c7" padding="30px 15px">
+        <wm-layoutgrid name="layoutgrid3" show="true">
+            <wm-gridrow name="gridrow4">
+                <wm-gridcolumn columnwidth="6" name="gridcolumn11"></wm-gridcolumn>
+                <wm-gridcolumn columnwidth="6" name="gridcolumn12"></wm-gridcolumn>
+            </wm-gridrow>
+            <wm-gridrow name="gridrow5">
+                <wm-gridcolumn columnwidth="4" name="gridcolumn13" padding="unset 1.5px unset unset">
+                    <wm-container name="container7" class="p flex-inline v-center border bg-white" padding="unset 8px">
+                        <wm-icon iconclass="lc-pdf" name="icon3" class="pdf-red  pdf-icon-set-up"></wm-icon>
+                        <wm-container name="container8">
+                            <wm-label padding="unset" caption="bind:getData('h',1)" class="text-capitalize p font-extrasmall font-medium" name="label38"></wm-label>
+                            <wm-label padding="unset" class="text-capitalize text-coolgray p" margin="unset unset unset 0px" caption="bind:getData('v',1)" name="label39"></wm-label>
+                        </wm-container>
+                        <wm-prefab prefabname="BoxView" name="BoxView1" class="app-prefab set-pfb" url="https://auction-app-wm-ps.s3.amazonaws.com/photos/Californian_sample_driver's_license (1).pdf"></wm-prefab>
+                    </wm-container>
+                </wm-gridcolumn>
+                <wm-gridcolumn columnwidth="4" name="gridcolumn22_1" padding="unset unset unset 1.5em">
+                    <wm-container class="p flex-inline v-center bg-white border" padding="unset 8px" name="container9">
+                        <wm-icon iconclass="lc-pdf" class="pdf-red" name="icon3_1"></wm-icon>
+                        <wm-container name="container10">
+                            <wm-label padding="unset" caption="bind:getData('h',2)" class="text-capitalize p font-extrasmall font-medium" name="label34"></wm-label>
+                            <wm-label padding="unset" class="text-capitalize text-coolgray p" margin="0px unset unset unset" caption="bind:getData('v',2)" name="label35"></wm-label>
+                        </wm-container>
+                        <wm-prefab prefabname="BoxView" name="BoxView1" class="app-prefab set-pfb" url="https://auction-app-wm-ps.s3.amazonaws.com/photos/w2sample3 (1).pdf"></wm-prefab>
+                    </wm-container>
+                </wm-gridcolumn>
+                <wm-gridcolumn columnwidth="4" name="gridcolumn23"></wm-gridcolumn>
+            </wm-gridrow>
+        </wm-layoutgrid>
+    </wm-container>
+</wm-partial>

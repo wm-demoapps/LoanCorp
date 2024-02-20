@@ -1,0 +1,66 @@
+{
+  "username" : "{WM_CLOUD_MYSQL_USER_NAME}",
+  "password" : "{WM_CLOUD_MYSQL_PASSWORD}",
+  "url" : "jdbc:mariadb://{WM_CLOUD_MYSQL_HOST}/loancorpv2?useUnicode=yes&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&createDatabaseIfNotExist=true",
+  "driverClass" : "org.mariadb.jdbc.Driver",
+  "dialect" : "com.wavemaker.runtime.data.dialect.MySQLDialect",
+  "serviceId" : "loancorpv2",
+  "packageName" : "com.wavemaker.loancorpv2.loancorpv2",
+  "dbType" : "MySQL",
+  "host" : "{WM_CLOUD_MYSQL_HOST}",
+  "dbName" : "loancorpv2",
+  "port" : null,
+  "schemaName" : null,
+  "tableFilter" : [ {
+    "table" : "credit_history",
+    "schema" : null
+  }, {
+    "table" : "doc_extracted_data",
+    "schema" : null
+  }, {
+    "table" : "kyc",
+    "schema" : null
+  }, {
+    "table" : "comm_trail",
+    "schema" : null
+  }, {
+    "table" : "document",
+    "schema" : null
+  }, {
+    "table" : "loan_details",
+    "schema" : null
+  }, {
+    "table" : "credit_details",
+    "schema" : null
+  }, {
+    "table" : "loan_application",
+    "schema" : null
+  }, {
+    "table" : "login_details",
+    "schema" : null
+  }, {
+    "table" : "loan_offers",
+    "schema" : null
+  }, {
+    "table" : "customer_details",
+    "schema" : null
+  } ],
+  "schemaFilter" : [ ],
+  "impersonateUser" : false,
+  "activeDirectoryDomain" : null,
+  "hbm2ddl" : "update",
+  "maxPageSize" : 100,
+  "minPoolSize" : 2,
+  "maxPoolSize" : 4,
+  "transactionTimeout" : 30,
+  "dataSourceType" : "WM_MANAGED_DATASOURCE",
+  "jndiName" : "",
+  "reloadInfo" : {
+    "reload" : false,
+    "reason" : null,
+    "message" : null,
+    "reImport" : false
+  },
+  "readOnly" : false,
+  "metadataDialect" : ""
+}

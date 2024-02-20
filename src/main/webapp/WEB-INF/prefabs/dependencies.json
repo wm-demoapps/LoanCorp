@@ -1,0 +1,81 @@
+[ {
+  "name" : "BoxView",
+  "version" : "2.0.0",
+  "platformVersion" : null,
+  "publisherId" : "ent125f6535693b",
+  "publisherName" : "wmshowcase",
+  "artifactType" : "PREFAB",
+  "artifactDependencyList" : null
+}, {
+  "name" : "DocuSign",
+  "version" : "2.1",
+  "platformVersion" : null,
+  "publisherId" : null,
+  "publisherName" : null,
+  "artifactType" : "PREFAB",
+  "artifactDependencyList" : null
+}, {
+  "name" : "EmiCalc",
+  "version" : "1.0.0",
+  "platformVersion" : null,
+  "publisherId" : "ent125f6535693b",
+  "publisherName" : "wmshowcase",
+  "artifactType" : "PREFAB",
+  "artifactDependencyList" : null
+}, {
+  "name" : "Emi_Clculator",
+  "version" : "1.0.0",
+  "platformVersion" : null,
+  "publisherId" : null,
+  "publisherName" : null,
+  "artifactType" : "PREFAB",
+  "artifactDependencyList" : null
+}, {
+  "name" : "EntityExtract_V2",
+  "version" : "1.0.0",
+  "platformVersion" : null,
+  "publisherId" : "ent125f6535693b",
+  "publisherName" : "wmshowcase",
+  "artifactType" : "PREFAB",
+  "artifactDependencyList" : null
+}, {
+  "name" : "FacialRecognition",
+  "version" : "1.0.0",
+  "platformVersion" : null,
+  "publisherId" : "ent125f6535693b",
+  "publisherName" : "wmshowcase",
+  "artifactType" : "PREFAB",
+  "artifactDependencyList" : null
+}, {
+  "name" : "OtpModule",
+  "version" : "1.0.0",
+  "platformVersion" : null,
+  "publisherId" : "ent125f6535693b",
+  "publisherName" : "wmshowcase",
+  "artifactType" : "PREFAB",
+  "artifactDependencyList" : null
+}, {
+  "name" : "Otp_focus",
+  "version" : "1.0.0",
+  "platformVersion" : null,
+  "publisherId" : null,
+  "publisherName" : null,
+  "artifactType" : "PREFAB",
+  "artifactDependencyList" : null
+}, {
+  "name" : "facial_recognition",
+  "version" : "1.0.0",
+  "platformVersion" : null,
+  "publisherId" : null,
+  "publisherName" : null,
+  "artifactType" : "PREFAB",
+  "artifactDependencyList" : null
+}, {
+  "name" : "googlemaps",
+  "version" : "7.0.1",
+  "platformVersion" : null,
+  "publisherId" : null,
+  "publisherName" : null,
+  "artifactType" : "PREFAB",
+  "artifactDependencyList" : null
+} ]

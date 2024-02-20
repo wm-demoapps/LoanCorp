@@ -1,0 +1,42 @@
+{
+  "displayName" : "EmiCalc",
+  "group" : "",
+  "iconUrl" : "/resources/images/imagelists/prefab-icon.png",
+  "resources" : {
+    "styles" : [ "/pages/Main/Main.css" ],
+    "scripts" : [ ]
+  },
+  "properties" : {
+    "calculatedamount" : {
+      "type" : "object",
+      "displayName" : "Calculatedamount",
+      "description" : "calculated Amount",
+      "bindable" : "out-bound",
+      "widget" : "string",
+      "show" : false,
+      "showAt" : "",
+      "disabled" : true
+    }
+  },
+  "events" : { },
+  "methods" : {
+    "calculatLaonAmount" : {
+      "description" : "calculateLoan Amount",
+      "parameters" : [ {
+        "name" : "loanAmount",
+        "type" : "any",
+        "description" : ""
+      }, {
+        "name" : "loanTenureInYears",
+        "type" : "any",
+        "description" : ""
+      }, {
+        "name" : "annualInterestRate",
+        "type" : "any",
+        "description" : ""
+      } ],
+      "returnType" : "any",
+      "example" : ""
+    }
+  }
+}

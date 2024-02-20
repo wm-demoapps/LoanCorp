@@ -1,0 +1,156 @@
+<wm-page pagetitle="Test Page" name="page1">
+    <wm-header content="header" name="header1"></wm-header>
+    <wm-content name="content1">
+        <wm-left-panel columnwidth="2" content="leftnav" name="left_panel1"></wm-left-panel>
+        <wm-page-content columnwidth="10" name="page_content1">
+            <wm-layoutgrid name="layoutgrid8">
+                <wm-gridrow name="gridrow15">
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn23">
+                        <wm-container name="container12">
+                            <wm-number textalign="right" name="number7" trailingzero="false" updateon="blur" required="false"></wm-number>
+                        </wm-container>
+                    </wm-gridcolumn>
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn24">
+                        <wm-container name="container13">
+                            <wm-number textalign="right" name="number8"></wm-number>
+                        </wm-container>
+                    </wm-gridcolumn>
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn27">
+                        <wm-container name="container14">
+                            <wm-number textalign="right" name="number9"></wm-number>
+                        </wm-container>
+                    </wm-gridcolumn>
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn28">
+                        <wm-container name="container15">
+                            <wm-number textalign="right" name="number10"></wm-number>
+                        </wm-container>
+                    </wm-gridcolumn>
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn29">
+                        <wm-container name="container16">
+                            <wm-number textalign="right" name="number11"></wm-number>
+                        </wm-container>
+                    </wm-gridcolumn>
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn30">
+                        <wm-container name="container17">
+                            <wm-number textalign="right" name="number12"></wm-number>
+                        </wm-container>
+                    </wm-gridcolumn>
+                </wm-gridrow>
+                <wm-gridrow name="gridrow16">
+                    <wm-gridcolumn columnwidth="6" name="gridcolumn25"></wm-gridcolumn>
+                    <wm-gridcolumn columnwidth="6" name="gridcolumn26"></wm-gridcolumn>
+                </wm-gridrow>
+            </wm-layoutgrid>
+            <wm-form errormessage="" captionposition="top" title="Form" enctype="application/x-www-form-urlencoded" method="get" dataset="bind:Variables.sv_Validate_User.dataSet" captionalign="left" name="executeValidateUserForm1" show="false">
+                <wm-layoutgrid columns="2" name="layoutgrid7">
+                    <wm-gridrow name="gridrow14">
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn21">
+                            <wm-form-field readonly="false" name="id" displayname="Id" key="id" type="string" show="true" widget="text"></wm-form-field>
+                        </wm-gridcolumn>
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn22">
+                            <wm-form-field readonly="false" name="pswd" displayname="Pswd" key="pswd" type="string" show="true" widget="text"></wm-form-field>
+                        </wm-gridcolumn>
+                    </wm-gridrow>
+                </wm-layoutgrid>
+                <wm-form-action key="reset" class="form-reset btn-default" iconclass="wi wi-refresh" display-name="Reset" type="reset"></wm-form-action>
+                <wm-form-action key="save" class="form-save btn-success" iconclass="wi wi-save" display-name="Save" type="submit"></wm-form-action>
+            </wm-form>
+            <wm-form errormessage="" captionposition="top" title="Form" enctype="application/x-www-form-urlencoded" method="post" dataset="bind:Variables.Loancorpv2CreateCustomerDetails.dataSet" captionalign="left" name="createCustomerDetailsForm1" show="false">
+                <wm-layoutgrid columns="2" name="layoutgrid1">
+                    <wm-gridrow name="gridrow2">
+                        <wm-composite name="composite1">
+                            <wm-label class="h4 control-label" caption="CustomerDetails Details" name="label1"></wm-label>
+                        </wm-composite>
+                    </wm-gridrow>
+                    <wm-gridrow name="gridrow3">
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn1">
+                            <wm-form-field name="CustomerDetails_address" displayname="Address" show="true" placeholder="Enter text" type="string" key="CustomerDetails.address" widget="text" inputtype="text" readonly="false"></wm-form-field>
+                        </wm-gridcolumn>
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn2">
+                            <wm-form-field name="CustomerDetails_dob" displayname="Dob" show="true" placeholder="Select date" type="date" key="CustomerDetails.dob" widget="date" readonly="false"></wm-form-field>
+                        </wm-gridcolumn>
+                    </wm-gridrow>
+                    <wm-gridrow name="gridrow4">
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn3">
+                            <wm-form-field name="CustomerDetails_email" displayname="Email" show="true" placeholder="Enter text" type="string" key="CustomerDetails.email" widget="text" inputtype="text" readonly="false"></wm-form-field>
+                        </wm-gridcolumn>
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn4">
+                            <wm-form-field name="CustomerDetails_fname" displayname="Fname" show="true" placeholder="Enter text" type="string" key="CustomerDetails.fname" widget="text" inputtype="text" readonly="false"></wm-form-field>
+                        </wm-gridcolumn>
+                    </wm-gridrow>
+                    <wm-gridrow name="gridrow5">
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn5">
+                            <wm-form-field name="CustomerDetails_lname" displayname="Lname" show="true" placeholder="Enter text" type="string" key="CustomerDetails.lname" widget="text" inputtype="text" readonly="false"></wm-form-field>
+                        </wm-gridcolumn>
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn6">
+                            <wm-form-field name="CustomerDetails_mobileno" displayname="Mobileno" show="true" placeholder="Enter text" type="string" key="CustomerDetails.mobileno" widget="text" inputtype="text" readonly="false"></wm-form-field>
+                        </wm-gridcolumn>
+                    </wm-gridrow>
+                    <wm-gridrow name="gridrow6">
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn7">
+                            <wm-form-field name="CustomerDetails_ssn" displayname="Ssn" show="true" placeholder="Enter text" type="string" key="CustomerDetails.ssn" widget="text" inputtype="text" readonly="false"></wm-form-field>
+                        </wm-gridcolumn>
+                    </wm-gridrow>
+                </wm-layoutgrid>
+                <wm-form-action key="reset" display-name="Reset" show="true" class="form-reset btn-default" iconclass="wi wi-refresh" title="Reset" disabled="false" widget-type="button" type="reset" update-mode="true"></wm-form-action>
+                <wm-form-action key="save" display-name="Save" show="true" class="form-save btn-success" iconclass="wi wi-save" title="Save" action="createCustomerDetailsForm1_saveAction($event)" disabled="false" widget-type="button" type="submit" update-mode="true"></wm-form-action>
+            </wm-form>
+            <wm-panel subheading="subheading" iconclass="wi wi-account-circle" autoclose="outsideClick" title="Title" name="panel1" badgetype="default" show="false">
+                <wm-panel-footer name="panel_footer1">
+                    <wm-label padding="unset 0.5em" class="text-muted" caption="Addition Info" name="label2"></wm-label>
+                </wm-panel-footer>
+            </wm-panel>
+            <wm-container name="container1" class="app-outlined-container"></wm-container>
+            <wm-layoutgrid name="layoutgrid2">
+                <wm-gridrow name="gridrow6_1">
+                    <wm-gridcolumn columnwidth="6" name="gridcolumn8">
+                        <wm-label padding="unset" name="label3" class="h1"></wm-label>
+                        <wm-label padding="unset" name="label4" class="h1"></wm-label>
+                    </wm-gridcolumn>
+                    <wm-gridcolumn columnwidth="6" name="gridcolumn9"></wm-gridcolumn>
+                </wm-gridrow>
+                <wm-gridrow name="gridrow7">
+                    <wm-gridcolumn columnwidth="6" name="gridcolumn10"></wm-gridcolumn>
+                    <wm-gridcolumn columnwidth="6" name="gridcolumn11"></wm-gridcolumn>
+                </wm-gridrow>
+            </wm-layoutgrid>
+            <wm-container name="container2" class="app-container"></wm-container>
+            <wm-container name="container3" class="app-elevated-container"></wm-container>
+            <wm-tile class="bg-primary" name="tile1">
+                <wm-layoutgrid height="100%" name="layoutgrid3">
+                    <wm-gridrow height="100%" name="gridrow8">
+                        <wm-gridcolumn columnwidth="3" horizontalalign="center" name="gridcolumn12">
+                            <wm-icon name="tileIcon" iconclass="wi wi-bar-chart fa-3x"></wm-icon>
+                        </wm-gridcolumn>
+                        <wm-gridcolumn columnwidth="9" horizontalalign="center" name="gridcolumn13">
+                            <wm-label name="tileTitle" caption="title" class="p" fontunit="em"></wm-label>
+                            <wm-label name="tileStatLabel" caption="00" fontunit="em" class="h1"></wm-label>
+                        </wm-gridcolumn>
+                    </wm-gridrow>
+                </wm-layoutgrid>
+            </wm-tile>
+            <wm-rating name="rating1"></wm-rating>
+            <wm-select class="select-locale" dataset="bind:Variables.supportedLocale.dataSet" on-change="App.changeLocale(newVal);App.reload();" placeholder="Select Language" name="select1"></wm-select>
+            <wm-composite name="composite2">
+                <wm-label class="col-md-3 control-label" name="label8"></wm-label>
+                <wm-container class="col-md-9" name="container5">
+                    <wm-colorpicker name="colorpicker1"></wm-colorpicker>
+                </wm-container>
+                <wm-popover popoverwidth="240" popoverheight="360" margin="unset 0.5em" name="popover1" title="Test" popoverarrow="true" contentanimation="fadeInUp"></wm-popover>
+            </wm-composite>
+            <wm-container name="container12_1">
+                <wm-layoutgrid name="layoutgrid9">
+                    <wm-gridrow name="gridrow17">
+                        <wm-gridcolumn columnwidth="12" name="gridcolumn31" class="text-center">
+                            <wm-container name="container13_1">
+                                <wm-progress-bar datavalue="30" name="progress_bar1"></wm-progress-bar>
+                                <wm-container name="container14_1"></wm-container>
+                            </wm-container>
+                        </wm-gridcolumn>
+                    </wm-gridrow>
+                </wm-layoutgrid>
+            </wm-container>
+        </wm-page-content>
+    </wm-content>
+    <wm-footer content="footer" name="footer1"></wm-footer>
+</wm-page>

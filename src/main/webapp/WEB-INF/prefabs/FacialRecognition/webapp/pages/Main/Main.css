@@ -1,0 +1,63 @@
+.wm-app .center-aligned {
+    padding: 0;
+    margin: 0;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*.wm-app .btn-default, .wm-app .btn-default:hover, .wm-app .btn-default:focus, .wm-app .btn-default:active {*/
+
+
+/*    color: #4682B4;*/
+
+
+/*    border-color: #4682B4;*/
+
+
+/*    background-color: transparent;*/
+
+
+/*    border-radius: 8px;*/
+
+
+/*}*/
+
+
+/*.wm-app .btn-success, .wm-app .btn-success:hover, .wm-app .btn-success:focus, .wm-app .btn-success:active{*/
+
+
+/*    color: #3CB371;*/
+
+
+/*    border-color: #3CB371;*/
+
+
+/*    background-color: transparent;*/
+
+
+/*    border-radius: 8px;*/
+
+
+/*}*/
+
+
+/*.wm-app .btn-danger, .wm-app .btn-danger:hover, .wm-app .btn-danger:focus, .wm-app .btn-danger:active{*/
+
+
+/*    color: #FA8072;*/
+
+
+/*    border-color: #FA8072;*/
+
+
+/*    background-color: transparent;*/
+
+
+/*    border-radius: 8px;*/
+
+
+/*}*/

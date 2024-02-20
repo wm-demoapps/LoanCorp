@@ -1,0 +1,119 @@
+{
+  "icons" : {
+    "_id" : "wm-Icons-wm.Variable-1701581896008",
+    "name" : "icons",
+    "owner" : "Page",
+    "category" : "wm.Variable",
+    "dataBinding" : [ ],
+    "dataSet" : [ {
+      "icon" : "lc-card"
+    }, {
+      "icon" : "lc-location"
+    }, {
+      "icon" : "lc-home"
+    } ],
+    "type" : "entry",
+    "isList" : true,
+    "twoWayBinding" : false,
+    "saveInPhonegap" : false
+  },
+  "mdAlternateLoanOffers" : {
+    "_id" : "wm-mdAlternateLoanOffers-wm.Variable-1698910181326",
+    "name" : "mdAlternateLoanOffers",
+    "owner" : "Page",
+    "category" : "wm.Variable",
+    "dataBinding" : [ ],
+    "dataSet" : [ {
+      "offer" : "OFFER 1",
+      "Amount" : "$252000",
+      "Tenure" : "21/12/2022 - 21/12/2027",
+      "InterestRatePa" : "21%",
+      "LoanEmiMnthly" : "$5082.00",
+      "Probability" : 1
+    }, {
+      "offer" : "OFFER 2",
+      "Amount" : "$259000",
+      "Tenure" : "21/12/2022 - 21/12/2027",
+      "InterestRatePa" : "23%",
+      "LoanEmiMnthly" : "$5309.50",
+      "Probability" : 2
+    }, {
+      "offer" : "OFFER 3",
+      "Amount" : "$261000",
+      "Tenure" : "21/12/2022 - 21/12/2027",
+      "InterestRatePa" : "25%",
+      "LoanEmiMnthly" : "$5437.50",
+      "Probability" : 2
+    }, {
+      "offer" : "OFFER 4",
+      "Amount" : "$263000",
+      "Tenure" : "21/12/2022 - 21/12/2027",
+      "InterestRatePa" : "27%",
+      "LoanEmiMnthly" : "$5566.83",
+      "Probability" : 3
+    }, {
+      "offer" : "OFFER 5",
+      "Amount" : "$265000",
+      "Tenure" : "21/12/2022 - 21/12/2027",
+      "InterestRatePa" : "29%",
+      "LoanEmiMnthly" : "$5609.17",
+      "Probability" : 4
+    } ],
+    "type" : "entry",
+    "isList" : true,
+    "twoWayBinding" : false,
+    "saveInPhonegap" : false
+  },
+  "mdTestListData" : {
+    "_id" : "wm-mdTestListData-wm.Variable-1698908832425",
+    "name" : "mdTestListData",
+    "owner" : "Page",
+    "category" : "wm.Variable",
+    "dataBinding" : [ ],
+    "dataSet" : [ {
+      "LoaName" : "Credit Card",
+      "LoanValue" : "1.93%",
+      "CityAvg" : "94%",
+      "NationalAvg" : "93%",
+      "icon" : "lc-card"
+    }, {
+      "LoaName" : "Auto Loan",
+      "LoanValue" : "11.36%",
+      "CityAvg" : "83%",
+      "NationalAvg" : "93%",
+      "icon" : "lc-car"
+    }, {
+      "LoaName" : "Home Loan",
+      "LoanValue" : "19.64%",
+      "CityAvg" : "94%",
+      "NationalAvg" : "93%",
+      "icon" : "lc-home"
+    } ],
+    "type" : "entry",
+    "isList" : true,
+    "twoWayBinding" : false,
+    "saveInPhonegap" : false
+  },
+  "sv_Update_Loan_Application_Status" : {
+    "_id" : "wm-sv_Update_Loan_Application_Status-wm.ServiceVariable-1702305824704",
+    "name" : "sv_Update_Loan_Application_Status",
+    "owner" : "Page",
+    "category" : "wm.ServiceVariable",
+    "dataBinding" : [ ],
+    "type" : "com.wavemaker.commons.wrapper.IntegerWrapper",
+    "service" : "loancorpv2",
+    "operation" : "executeUpdateLoanApplicationStatus",
+    "operationId" : "QueryExecutionController_executeUpdateLoanApplicationStatus",
+    "operationType" : "put",
+    "serviceType" : "DataService",
+    "dataSet" : [ ],
+    "isList" : false,
+    "maxResults" : 20,
+    "startUpdate" : false,
+    "autoUpdate" : false,
+    "inFlightBehavior" : "executeLast",
+    "transformationRequired" : false,
+    "saveInPhonegap" : false,
+    "controller" : "QueryExecution"
+  }
+}

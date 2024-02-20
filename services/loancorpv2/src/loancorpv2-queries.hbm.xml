@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <sql-query name="getloanappdetails">
+        <![CDATA[
+        select * from loan_application
+        ]]>
+    </sql-query>
+
+    <sql-query name="getloanappdetails__count">
+        <![CDATA[
+        select count(*) from (select * from loan_application) wmTempTable
+        ]]>
+    </sql-query>
+
+    <sql-query name="updateLoanApplicationStatus">
+        <![CDATA[
+        update loan_application set status=:status where id =:loanId
+        ]]>
+    <query-param name="status" type="java.lang.String"/>
+    <query-param name="loanId" type="java.lang.String"/>
+    </sql-query>
+
+    <sql-query name="GetPendingLoans">
+        <![CDATA[
+        SELECT loan_application.*, customer_details.fname, customer_details.lname,customer_details.email
+FROM loan_application
+INNER JOIN customer_details ON loan_application.customer_details_id = customer_details.id
+WHERE loan_application.status = "Pending"
+        ]]>
+    </sql-query>
+
+    <sql-query name="GetPendingLoans__count">
+        <![CDATA[
+        select count(*) from (SELECT loan_application.*, customer_details.fname, customer_details.lname,customer_details.email
+FROM loan_application
+INNER JOIN customer_details ON loan_application.customer_details_id = customer_details.id
+WHERE loan_application.status = "Pending") wmTempTable
+        ]]>
+    </sql-query>
+
+    <sql-query name="validateUser">
+        <![CDATA[
+        select * from login_details where user_id =:id and password =:pswd
+        ]]>
+    <query-param name="id" type="java.lang.String"/>
+    <query-param name="pswd" type="java.lang.String"/>
+    </sql-query>
+
+    <sql-query name="validateUser__count">
+        <![CDATA[
+        select count(*) from (select * from login_details where user_id =:id and password =:pswd) wmTempTable
+        ]]>
+    <query-param name="id" type="java.lang.String"/>
+    <query-param name="pswd" type="java.lang.String"/>
+    </sql-query>
+
+    <sql-query name="test_customer_details">
+        <![CDATA[
+        Select fname,lname,email,dob from customer_details where id=:id
+        ]]>
+    <query-param name="id" type="java.lang.String"/>
+    </sql-query>
+
+    <sql-query name="test_customer_details__count">
+        <![CDATA[
+        select count(*) from (Select fname,lname,email,dob from customer_details where id=:id) wmTempTable
+        ]]>
+    <query-param name="id" type="java.lang.String"/>
+    </sql-query>
+
+    <sql-query name="getCustomerLoanDetails">
+        <![CDATA[
+        SELECT * FROM loan_application WHERE customer_details_id = :id
+        ]]>
+    <query-param name="id" type="java.lang.String"/>
+    </sql-query>
+
+    <sql-query name="getCustomerLoanDetails__count">
+        <![CDATA[
+        select count(*) from (SELECT * FROM loan_application WHERE customer_details_id = :id) wmTempTable
+        ]]>
+    <query-param name="id" type="java.lang.String"/>
+    </sql-query>
+
+    <sql-query name="getKycImage">
+        <![CDATA[
+        select id, kyc_image from kyc where loan_application_id=:id
+        ]]>
+    <query-param name="id" type="java.lang.String"/>
+    </sql-query>
+
+    <sql-query name="getKycImage__count">
+        <![CDATA[
+        select count(*) from (select id, kyc_image from kyc where loan_application_id=:id) wmTempTable
+        ]]>
+    <query-param name="id" type="java.lang.String"/>
+    </sql-query>
+
+    <sql-query name="getKycImage__identifier">
+        <![CDATA[
+        select * from (select id, kyc_image from kyc where loan_application_id=:id) wmTempTable where `id`=:id_1
+        ]]>
+    <query-param name="id" type="java.lang.String"/>
+    <query-param name="id_1" type="java.lang.Long"/>
+    </sql-query>
+
+    <sql-query name="getCustomerId">
+        <![CDATA[
+        SELECT customer_id 
+FROM login_details 
+WHERE id=:id
+        ]]>
+    <query-param name="id" type="java.lang.String"/>
+    </sql-query>
+
+    <sql-query name="getCustomerId__count">
+        <![CDATA[
+        select count(*) from (SELECT customer_id 
+FROM login_details 
+WHERE id=:id) wmTempTable
+        ]]>
+    <query-param name="id" type="java.lang.String"/>
+    </sql-query>
+</hibernate-mapping>

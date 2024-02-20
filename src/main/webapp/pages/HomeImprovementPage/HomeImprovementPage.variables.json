@@ -1,0 +1,315 @@
+{
+  "FileServiceUploadFile" : {
+    "_id" : "wm-FileServiceUploadFile-wm.ServiceVariable-1697794836395",
+    "name" : "FileServiceUploadFile",
+    "owner" : "Page",
+    "category" : "wm.ServiceVariable",
+    "dataBinding" : [ {
+      "isList" : true,
+      "target" : "files",
+      "value" : "bind:Widgets.fileupload1.selectedFiles",
+      "type" : "file"
+    } ],
+    "type" : "com.wavemaker.loancorpv2.fileservice.FileUploadResponse",
+    "service" : "FileService",
+    "operation" : "uploadFile",
+    "operationId" : "FileController_uploadFile",
+    "operationType" : "post",
+    "serviceType" : "JavaService",
+    "dataSet" : [ ],
+    "isList" : true,
+    "maxResults" : 20,
+    "onSuccess" : "FileServiceUploadFileonSuccess(variable, data, options)",
+    "startUpdate" : false,
+    "autoUpdate" : false,
+    "inFlightBehavior" : "executeLast",
+    "transformationRequired" : false,
+    "saveInPhonegap" : false,
+    "isDefault" : true,
+    "controller" : "File"
+  },
+  "FileServiceUploadFile1" : {
+    "_id" : "wm-FileServiceUploadFile1-wm.ServiceVariable-1697794838882",
+    "name" : "FileServiceUploadFile1",
+    "owner" : "Page",
+    "category" : "wm.ServiceVariable",
+    "dataBinding" : [ {
+      "isList" : true,
+      "target" : "files",
+      "value" : "bind:Widgets.fileupload2.selectedFiles",
+      "type" : "file"
+    } ],
+    "type" : "com.wavemaker.loancorpv2.fileservice.FileUploadResponse",
+    "service" : "FileService",
+    "operation" : "uploadFile",
+    "operationId" : "FileController_uploadFile",
+    "operationType" : "post",
+    "serviceType" : "JavaService",
+    "dataSet" : [ ],
+    "isList" : true,
+    "maxResults" : 20,
+    "onSuccess" : "FileServiceUploadFile1onSuccess(variable, data, options)",
+    "onError" : "FileServiceUploadFile1onError(variable, data, options)",
+    "startUpdate" : false,
+    "autoUpdate" : false,
+    "inFlightBehavior" : "executeLast",
+    "transformationRequired" : false,
+    "saveInPhonegap" : false,
+    "isDefault" : true,
+    "controller" : "File"
+  },
+  "FileServiceUploadFile2" : {
+    "_id" : "wm-FileServiceUploadFile2-wm.ServiceVariable-1701935847371",
+    "name" : "FileServiceUploadFile2",
+    "owner" : "Page",
+    "category" : "wm.ServiceVariable",
+    "dataBinding" : [ {
+      "target" : "files",
+      "value" : "bind:Widgets.fileupload3.selectedFiles",
+      "type" : "java.lang.String"
+    } ],
+    "type" : "com.wavemaker.loancorpv2.fileservice.FileUploadResponse",
+    "service" : "FileService",
+    "operation" : "uploadFile",
+    "operationId" : "FileController_uploadFile",
+    "serviceType" : "JavaService",
+    "dataSet" : [ ],
+    "isList" : false,
+    "maxResults" : 20,
+    "startUpdate" : false,
+    "autoUpdate" : false,
+    "inFlightBehavior" : "executeLast",
+    "transformationRequired" : false,
+    "saveInPhonegap" : false,
+    "isDefault" : true,
+    "controller" : "File"
+  },
+  "FileServiceUploadFile3" : {
+    "_id" : "wm-FileServiceUploadFile3-wm.ServiceVariable-1701935851684",
+    "name" : "FileServiceUploadFile3",
+    "owner" : "Page",
+    "category" : "wm.ServiceVariable",
+    "dataBinding" : [ {
+      "target" : "files",
+      "value" : "bind:Widgets.fileupload4.selectedFiles",
+      "type" : "java.lang.String"
+    } ],
+    "type" : "com.wavemaker.loancorpv2.fileservice.FileUploadResponse",
+    "service" : "FileService",
+    "operation" : "uploadFile",
+    "operationId" : "FileController_uploadFile",
+    "serviceType" : "JavaService",
+    "dataSet" : [ ],
+    "isList" : false,
+    "maxResults" : 20,
+    "startUpdate" : false,
+    "autoUpdate" : false,
+    "inFlightBehavior" : "executeLast",
+    "transformationRequired" : false,
+    "saveInPhonegap" : false,
+    "isDefault" : true,
+    "controller" : "File"
+  },
+  "FileServiceUploadFile4" : {
+    "_id" : "wm-FileServiceUploadFile4-wm.ServiceVariable-1701967502503",
+    "name" : "FileServiceUploadFile4",
+    "owner" : "Page",
+    "category" : "wm.ServiceVariable",
+    "dataBinding" : [ {
+      "target" : "files",
+      "value" : "bind:Widgets.fileupload3.selectedFiles",
+      "type" : "java.lang.String"
+    } ],
+    "type" : "com.wavemaker.loancorpv2.fileservice.FileUploadResponse",
+    "service" : "FileService",
+    "operation" : "uploadFile",
+    "operationId" : "FileController_uploadFile",
+    "serviceType" : "JavaService",
+    "dataSet" : [ ],
+    "isList" : false,
+    "maxResults" : 20,
+    "startUpdate" : false,
+    "autoUpdate" : false,
+    "inFlightBehavior" : "executeLast",
+    "transformationRequired" : false,
+    "saveInPhonegap" : false,
+    "isDefault" : true,
+    "controller" : "File"
+  },
+  "md_Extracted_Field_Params_Dr_License" : {
+    "_id" : "wm-md_Extracted_Field_Params-wm.Variable-1701237601778",
+    "name" : "md_Extracted_Field_Params_Dr_License",
+    "owner" : "Page",
+    "category" : "wm.Variable",
+    "dataBinding" : [ ],
+    "dataSet" : {
+      "params" : [ "DL", "EXP", "LN", "FN", "DOB", "RSTR", "DD", "ISS" ],
+      "url" : ""
+    },
+    "type" : "entry",
+    "isList" : false,
+    "twoWayBinding" : false,
+    "saveInPhonegap" : false
+  },
+  "md_Extracted_Field_Params_W2_Form" : {
+    "_id" : "wm-md_Extracted_Field_Params_W2_Form-wm.Variable-1704210797198",
+    "name" : "md_Extracted_Field_Params_W2_Form",
+    "owner" : "Page",
+    "category" : "wm.Variable",
+    "dataBinding" : [ ],
+    "dataSet" : {
+      "params" : [ "Employee's social security number", "Employer Identification Number", "Wages tips other compensation", "Empolyer's name address and zipcode", "State" ],
+      "url" : ""
+    },
+    "type" : "entry",
+    "isList" : false,
+    "twoWayBinding" : false,
+    "saveInPhonegap" : false
+  },
+  "md_Interest_Rate" : {
+    "_id" : "wm-md_Interest_Rate-wm.Variable-1699618678459",
+    "name" : "md_Interest_Rate",
+    "owner" : "Page",
+    "category" : "wm.Variable",
+    "dataBinding" : [ ],
+    "dataSet" : {
+      "dataValue" : 24
+    },
+    "type" : "number",
+    "isList" : false,
+    "twoWayBinding" : false,
+    "saveInPhonegap" : false
+  },
+  "md_labels" : {
+    "_id" : "wm-md_uploaded_File_path-wm.Variable-1700829077954",
+    "name" : "md_labels",
+    "owner" : "Page",
+    "category" : "wm.Variable",
+    "dataBinding" : [ ],
+    "dataSet" : [ "w2EinNo", "w2Wages", "w2State", "w2Zip", "w2Address", "w2SsnNo", "DOB", "DD", "ISS", "dlNo" ],
+    "type" : "entry",
+    "isList" : true,
+    "twoWayBinding" : false,
+    "saveInPhonegap" : false
+  },
+  "mdCalculatedLoanAmount" : {
+    "_id" : "wm-mdCalculatedLoanAmount-wm.Variable-1699600671457",
+    "name" : "mdCalculatedLoanAmount",
+    "owner" : "Page",
+    "category" : "wm.Variable",
+    "dataBinding" : [ ],
+    "dataSet" : {
+      "Emi" : "",
+      "InterestAmt" : "",
+      "PricipalAmt" : "",
+      "InterestPercentage" : "",
+      "PricipalPercentage" : "",
+      "TotalPayment" : ""
+    },
+    "type" : "entry",
+    "isList" : false,
+    "twoWayBinding" : false,
+    "saveInPhonegap" : false
+  },
+  "notificationAction1" : {
+    "_id" : "wm-notificationAction1-wm.NotificationVariable-1699436957328",
+    "name" : "notificationAction1",
+    "owner" : "Page",
+    "category" : "wm.NotificationVariable",
+    "dataBinding" : [ {
+      "target" : "content",
+      "value" : "inline",
+      "type" : "string"
+    }, {
+      "target" : "text",
+      "value" : "please enter address",
+      "type" : "string"
+    }, {
+      "target" : "duration",
+      "value" : "2000",
+      "type" : "number"
+    }, {
+      "target" : "class",
+      "value" : "Warning",
+      "type" : "string"
+    }, {
+      "target" : "toasterPosition",
+      "value" : "bottom right",
+      "type" : "string"
+    } ],
+    "operation" : "toast"
+  },
+  "notificationAction2" : {
+    "_id" : "wm-notificationAction2-wm.NotificationVariable-1700639786275",
+    "name" : "notificationAction2",
+    "owner" : "Page",
+    "category" : "wm.NotificationVariable",
+    "dataBinding" : [ {
+      "target" : "content",
+      "value" : "inline",
+      "type" : "string"
+    }, {
+      "target" : "text",
+      "value" : "Loan Has been saved as Draft",
+      "type" : "string"
+    } ],
+    "operation" : "toast"
+  },
+  "sv_Get_Customer_Details_By_Id" : {
+    "_id" : "wm-sv_Get_Customer_Details-wm.ServiceVariable-1701186248871",
+    "name" : "sv_Get_Customer_Details_By_Id",
+    "owner" : "Page",
+    "category" : "wm.ServiceVariable",
+    "dataBinding" : [ {
+      "target" : "id",
+      "value" : "bind:Variables.loggedInUser.dataSet.id",
+      "type" : "integer"
+    } ],
+    "type" : "com.wavemaker.loancorpv2.loancorpv2.CustomerDetails",
+    "service" : "loancorpv2",
+    "operation" : "getCustomerDetails",
+    "operationId" : "CustomerDetailsController_getCustomerDetails",
+    "operationType" : "get",
+    "serviceType" : "DataService",
+    "dataSet" : [ ],
+    "isList" : false,
+    "maxResults" : 20,
+    "startUpdate" : false,
+    "autoUpdate" : true,
+    "inFlightBehavior" : "executeLast",
+    "transformationRequired" : false,
+    "saveInPhonegap" : false,
+    "controller" : "CustomerDetails"
+  },
+  "wsgetLatLongs" : {
+    "_id" : "wm-wsgetLatLongs-wm.ServiceVariable-1699436192501",
+    "name" : "wsgetLatLongs",
+    "owner" : "Page",
+    "category" : "wm.ServiceVariable",
+    "dataBinding" : [ {
+      "target" : "address",
+      "value" : "bind:Widgets.md_createLoanApplicationForm1.formWidgets.address.datavalue",
+      "type" : "string"
+    }, {
+      "target" : "key",
+      "value" : "AIzaSyADRRvGAn-Q2TcJsk0uxZ0J-qPHmlXK24A",
+      "type" : "string"
+    } ],
+    "type" : "googleapis.RootResponse",
+    "service" : "googleapis",
+    "operation" : "invoke",
+    "operationId" : "googleapis_invoke",
+    "operationType" : "get",
+    "serviceType" : "RestService",
+    "dataSet" : [ ],
+    "isList" : false,
+    "maxResults" : 20,
+    "onError" : "wsgetLatLongsonError(variable, data, options)",
+    "startUpdate" : false,
+    "autoUpdate" : true,
+    "inFlightBehavior" : "executeLast",
+    "transformationRequired" : false,
+    "saveInPhonegap" : false,
+    "controller" : "googleapis"
+  }
+}

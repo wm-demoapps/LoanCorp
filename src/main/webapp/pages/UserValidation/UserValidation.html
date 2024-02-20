@@ -1,0 +1,71 @@
+<wm-page pagetitle="User Validation" name="page1">
+    <wm-header content="header" name="header1"></wm-header>
+    <wm-content name="content1">
+        <wm-page-content columnwidth="12" name="page_content1"></wm-page-content>
+    </wm-content>
+    <wm-footer content="footer" name="footer1"></wm-footer>
+    <wm-dialog dialogtype="design-dialog" modal="true" title="save your Home loan application" iconclass="lc-HomeHammer home-bg" name="otpDialog">
+        <wm-dialogactions name="dialogactions1" show="false">
+            <wm-button class="btn-primary" caption="Close" on-click="closeDialog()" name="button1"></wm-button>
+        </wm-dialogactions>
+        <wm-container name="container1" class="text-center" padding="unset unset 30px unset">
+            <wm-label padding="unset 10px unset unset" name="label6" caption="Please Enter OTP sent to" class="font-small"></wm-label>
+            <wm-label padding="unset" name="label7" caption="bind:maskPhoneNumber(Variables.md_createLoanApplication.dataSet.customerDetails.mobileno)" class="font-small font-semibold"></wm-label>
+        </wm-container>
+        <wm-composite name="composite1" horizontalalign="center" padding="unset 5em">
+            <wm-container class="col-md-12" name="container2" padding="unset unset 30px unset"></wm-container>
+            <wm-composite name="composite8">
+                <wm-layoutgrid name="layoutgrid1">
+                    <wm-gridrow name="gridrow3">
+                        <wm-gridcolumn columnwidth="2" name="gridcolumn5">
+                            <wm-composite name="composite2">
+                                <wm-container class="col-md-9" name="container3">
+                                    <wm-text name="text1" maxchars="1" autofocus="false" on-change="text1Change($event, widget, newVal, oldVal)" on-keyup="text1Keyup($event, widget)"></wm-text>
+                                </wm-container>
+                            </wm-composite>
+                        </wm-gridcolumn>
+                        <wm-gridcolumn columnwidth="2" name="gridcolumn6">
+                            <wm-composite name="composite3">
+                                <wm-container class="col-md-9" name="container4">
+                                    <wm-text name="text2" on-keyup="text2Keyup($event, widget)"></wm-text>
+                                </wm-container>
+                            </wm-composite>
+                        </wm-gridcolumn>
+                        <wm-gridcolumn columnwidth="2" name="gridcolumn7">
+                            <wm-composite name="composite4">
+                                <wm-container class="col-md-9" name="container5">
+                                    <wm-text name="text3" on-keyup="text3Keyup($event, widget)"></wm-text>
+                                </wm-container>
+                            </wm-composite>
+                        </wm-gridcolumn>
+                        <wm-gridcolumn columnwidth="2" name="gridcolumn8">
+                            <wm-composite name="composite5">
+                                <wm-container class="col-md-9" name="container6">
+                                    <wm-text name="text4" on-keyup="text4Keyup($event, widget)"></wm-text>
+                                </wm-container>
+                            </wm-composite>
+                        </wm-gridcolumn>
+                        <wm-gridcolumn columnwidth="2" name="gridcolumn9">
+                            <wm-composite name="composite6">
+                                <wm-container class="col-md-9" name="container7">
+                                    <wm-text name="text5" on-keyup="text5Keyup($event, widget)"></wm-text>
+                                </wm-container>
+                            </wm-composite>
+                        </wm-gridcolumn>
+                        <wm-gridcolumn columnwidth="2" name="gridcolumn10">
+                            <wm-composite name="composite7">
+                                <wm-container class="col-md-9" name="container8">
+                                    <wm-text name="text6"></wm-text>
+                                </wm-container>
+                            </wm-composite>
+                        </wm-gridcolumn>
+                    </wm-gridrow>
+                </wm-layoutgrid>
+                <wm-label padding="unset" name="label10" caption="I didn't Recieve a Code "></wm-label>
+                <wm-anchor margin="unset 0.5em" name="anchor1" caption="Resend Otp"></wm-anchor>
+            </wm-composite>
+            <wm-button class="btn-secondary btn-block" caption="verify" type="button" margin="unset" name="validateOtp" on-click="validateOtpClick($event, widget)"></wm-button>
+        </wm-composite>
+        <wm-container name="container10"></wm-container>
+    </wm-dialog>
+</wm-page>

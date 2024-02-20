@@ -1,0 +1,8 @@
+{
+  "id" : "FileService",
+  "type" : "JavaService",
+  "packageNames" : [ "com.wavemaker.loancorpv2.fileservice" ],
+  "serviceClassNames" : [ "com.wavemaker.loancorpv2.fileservice.FileService" ],
+  "title" : "FileService",
+  "mockEnabled" : false
+}

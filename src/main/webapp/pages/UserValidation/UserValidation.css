@@ -1,0 +1,9 @@
+input:focus {
+    box-shadow: 0 0 10px rgba(45, 146, 241, 0.3) !important;
+    /* background-color: red; */
+}
+
+
+/* input[type="text"]:focus {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+} */

@@ -1,0 +1,211 @@
+<wm-partial name="header" type="header">
+    <wm-layoutgrid name="headerlayout" columns="6">
+        <wm-gridrow name="gridrow2_1" class="flex v-center">
+            <wm-gridcolumn columnwidth="2" name="gridcolumn5_1">
+                <wm-picture picturesource="resources/images/imagelists/LoancorpLogo.png" name="AppLogo" on-click="Actions.goToPage_Main.invoke()" pictureplaceholder="resources/images/imagelists/LoancorpLogo.png"></wm-picture>
+            </wm-gridcolumn>
+            <wm-gridcolumn columnwidth="2" name="gridcolumn6_1" padding="2px unset unset unset">
+                <wm-switch datavalue="Personal" dataset=" Personal, Business" name="switch2"></wm-switch>
+            </wm-gridcolumn>
+            <wm-gridcolumn columnwidth="5" name="gridcolumn7" horizontalalign="center">
+                <wm-navbar title="Home" name="navbar1" show="false">
+                    <wm-nav type="navbar" class="navbar-left" name="nav1">
+                        <wm-nav-item name="nav_item1">
+                            <wm-anchor caption="Accounts" name="anchor1"></wm-anchor>
+                        </wm-nav-item>
+                        <wm-nav-item name="nav_item2">
+                            <wm-anchor caption="Savings" name="anchor2"></wm-anchor>
+                        </wm-nav-item>
+                        <wm-nav-item name="nav_item3">
+                            <wm-anchor caption="Loan" name="anchor3"></wm-anchor>
+                        </wm-nav-item>
+                        <wm-nav-item name="nav_item4">
+                            <wm-anchor caption="Help" name="anchor4"></wm-anchor>
+                        </wm-nav-item>
+                    </wm-nav>
+                </wm-navbar>
+                <wm-nav type="pills" autoclose="outsideClick" name="nav2" class="flex v-center h-center">
+                    <wm-nav-item name="nav_item5">
+                        <wm-anchor caption="Home" name="anchor8_1"></wm-anchor>
+                    </wm-nav-item>
+                    <wm-nav-item name="nav_item6">
+                        <wm-anchor caption="My Account" name="anchor9_1" on-click="anchor9_1Click($event, widget)"></wm-anchor>
+                    </wm-nav-item>
+                    <wm-nav-item name="nav_item7">
+                        <wm-anchor caption="Savings" name="anchor10_1"></wm-anchor>
+                    </wm-nav-item>
+                    <wm-nav-item name="nav_item8" class="active">
+                        <wm-anchor name="anchor11" iconclass="" caption="Loan" on-click="Actions.goToPage_Main.invoke()"></wm-anchor>
+                    </wm-nav-item>
+                    <wm-nav-item name="nav_item9">
+                        <wm-anchor name="anchor12" iconclass="" caption="Help"></wm-anchor>
+                    </wm-nav-item>
+                </wm-nav>
+            </wm-gridcolumn>
+            <wm-gridcolumn columnwidth="3" name="gridcolumn8">
+                <wm-container name="container5_1" class="flex v-center r-end">
+                    <wm-anchor margin="unset 1em" iconclass="lc-search" caption="" name="anchor10"></wm-anchor>
+                    <wm-anchor margin="unset 1em" iconclass="lc-calling" caption="" name="anchor13"></wm-anchor>
+                    <wm-anchor margin="unset 1em" iconclass="lc-locationpin" caption="" name="anchor14"></wm-anchor>
+                    <wm-button class="btn-warning" caption="Sign out" type="button" margin="unset" name="signout_button" show="bind:Variables.loggedInUser.dataSet.id" on-click="Actions.logoutAction.invoke()"></wm-button>
+                    <wm-button class="btn-primary" caption="Sign in" type="button" margin="unset unset unset 1em" iconposition="left" textalign="center" on-click="signin_buttonClick($event, widget)" name="signin_button" show="bind:!Variables.loggedInUser.dataSet.id"></wm-button>
+                </wm-container>
+            </wm-gridcolumn>
+        </wm-gridrow>
+    </wm-layoutgrid>
+    <wm-dialog dialogtype="design-dialog" modal="true" title="Enter Verification Code" iconclass="" name="validate_user_dialog">
+        <wm-layoutgrid name="layoutgrid2">
+            <wm-gridrow name="gridrow5">
+                <wm-gridcolumn columnwidth="12" name="gridcolumn11">
+                    <wm-label class="p text-center font-small font-medium" name="label7" caption="Please Enter OTP to verify" padding="unset unset 30px unset"></wm-label>
+                </wm-gridcolumn>
+            </wm-gridrow>
+            <wm-gridrow name="gridrow2">
+                <wm-gridcolumn columnwidth="2" name="gridcolumn12"></wm-gridcolumn>
+                <wm-gridcolumn columnwidth="8" name="gridcolumn5" horizontalalign="center">
+                    <wm-composite name="composite4">
+                        <wm-container name="container4">
+                            <wm-text name="text3" placeholder="Enter Otp"></wm-text>
+                        </wm-container>
+                    </wm-composite>
+                </wm-gridcolumn>
+                <wm-gridcolumn columnwidth="2" name="gridcolumn14"></wm-gridcolumn>
+            </wm-gridrow>
+            <wm-gridrow name="gridrow4">
+                <wm-gridcolumn columnwidth="2" name="gridcolumn8_1"></wm-gridcolumn>
+                <wm-gridcolumn columnwidth="8" name="gridcolumn9" padding="unset unset 2em unset">
+                    <wm-button class="btn-secondary btn-block" caption="Verify" type="button" margin="unset" name="validate_otp_button" on-click="validate_otp_buttonClick($event, widget)"></wm-button>
+                </wm-gridcolumn>
+                <wm-gridcolumn columnwidth="2" name="gridcolumn10"></wm-gridcolumn>
+            </wm-gridrow>
+        </wm-layoutgrid>
+        <wm-dialogactions name="dialogactions2" show="false">
+            <wm-button class="btn-primary" caption="Close" on-click="closeDialog()" name="button3"></wm-button>
+        </wm-dialogactions>
+    </wm-dialog>
+    <wm-dialog dialogtype="design-dialog" modal="true" title="Login" iconclass="" name="login_dialog" class="app-login-dialog modal-sm">
+        <wm-dialogactions name="dialogactions3" show="false">
+            <wm-button class="btn-primary" caption="Close" on-click="closeDialog()" name="button5"></wm-button>
+        </wm-dialogactions>
+        <wm-login name="login1">
+            <wm-layoutgrid name="layoutgrid3">
+                <wm-gridrow name="gridrow3">
+                    <wm-gridcolumn columnwidth="6" name="gridcolumn6"></wm-gridcolumn>
+                    <wm-gridcolumn columnwidth="6" name="gridcolumn7_1">
+                        <wm-composite name="composite6_1" show="false">
+                            <wm-checkbox caption="Officer" class="col-md-push-3 col-md-9" name="officer_chechbox" on-change="officer_chechboxChange($event, widget, newVal, oldVal)"></wm-checkbox>
+                        </wm-composite>
+                    </wm-gridcolumn>
+                </wm-gridrow>
+            </wm-layoutgrid>
+            <wm-form name="form2" margin="unset unset 2em unset">
+                <wm-composite name="composite5">
+                    <wm-label class="col-md-12 control-label" caption="Username" name="label8"></wm-label>
+                    <wm-container class="col-md-12" name="container5">
+                        <wm-text placeholder="Enter username" name="j_username" class="app-login-username" updateon="default" required="true"></wm-text>
+                    </wm-container>
+                </wm-composite>
+                <wm-composite name="composite6" margin="unset unset 0px unset">
+                    <wm-label class="col-md-12 control-label" caption="Password" name="label9"></wm-label>
+                    <wm-container class="col-md-12" name="container6">
+                        <wm-text type="password" name="j_password" placeholder="Enter password" class="app-login-password" updateon="default" required="true"></wm-text>
+                    </wm-container>
+                </wm-composite>
+                <wm-composite name="composite7" horizontalalign="right">
+                    <wm-checkbox class="app-login-rememberme" scopedatavalue="user.rememberMe" caption="Remember Me" name="j_rememberme" show="false"></wm-checkbox>
+                    <wm-anchor margin="5px 0.5px unset 0.5px" name="anchor13_1" caption="Forgotten password" iconposition="right"></wm-anchor>
+                </wm-composite>
+                <wm-button type="submit" caption="Log in" width="100%" class="app-login-button btn-secondary" on-click="login_buttonClick($event, widget)" name="button7"></wm-button>
+            </wm-form>
+        </wm-login>
+    </wm-dialog>
+    <wm-dialog dialogtype="design-dialog" modal="true" title="" iconclass="" name="QrScanDialog" width="500px">
+        <wm-layoutgrid name="layoutgrid4">
+            <wm-gridrow name="gridrow6">
+                <wm-gridcolumn columnwidth="12" name="gridcolumn14_1" horizontalalign="center">
+                    <wm-layoutgrid name="layoutgrid7">
+                        <wm-gridrow name="gridrow14">
+                            <wm-gridcolumn columnwidth="12" name="gridcolumn26" horizontalalign="center">
+                                <wm-label padding="unset" name="label4" caption="Enter Verification Code" class="font-semibold font-h3"></wm-label>
+                            </wm-gridcolumn>
+                        </wm-gridrow>
+                        <wm-gridrow name="gridrow15">
+                            <wm-gridcolumn columnwidth="12" name="gridcolumn28">
+                                <wm-label padding="unset" name="label5" caption="You will need an authenticator to complete this process" class="text-muted "></wm-label>
+                            </wm-gridcolumn>
+                        </wm-gridrow>
+                    </wm-layoutgrid>
+                    <wm-layoutgrid name="layoutgrid6">
+                        <wm-gridrow name="gridrow12">
+                            <wm-gridcolumn columnwidth="6" name="gridcolumn20_1"></wm-gridcolumn>
+                            <wm-gridcolumn columnwidth="6" name="gridcolumn21"></wm-gridcolumn>
+                        </wm-gridrow>
+                        <wm-gridrow name="gridrow13">
+                            <wm-gridcolumn columnwidth="12" name="gridcolumn22" horizontalalign="center">
+                                <wm-label padding="unset" name="label6" caption="Scan this QR code into your authenticator  app" class="font-semibold"></wm-label>
+                            </wm-gridcolumn>
+                        </wm-gridrow>
+                    </wm-layoutgrid>
+                    <wm-picture resizemode="cover" name="picture2" picturesource="resources/images/imagelists/QR.jpg" width="150px" height="150px"></wm-picture>
+                </wm-gridcolumn>
+            </wm-gridrow>
+            <wm-gridrow name="gridrow9">
+                <wm-gridcolumn columnwidth="12" name="gridcolumn17"></wm-gridcolumn>
+            </wm-gridrow>
+            <wm-gridrow name="gridrow7">
+                <wm-gridcolumn columnwidth="12" name="gridcolumn20" horizontalalign="center">
+                    <wm-label padding="unset" name="label7_1" caption="Enter the 6-digit authentication code generate by your app below" class="font-semibold"></wm-label>
+                </wm-gridcolumn>
+            </wm-gridrow>
+            <wm-gridrow name="gridrow15_1">
+                <wm-gridcolumn columnwidth="2" name="gridcolumn25" horizontalalign="center">
+                    <wm-composite name="composite6_2">
+                        <wm-container class="col-md-9" name="container5_2">
+                            <wm-text name="text4" placeholder="" maxchars="1" textalign="center" datavalue="9"></wm-text>
+                        </wm-container>
+                    </wm-composite>
+                </wm-gridcolumn>
+                <wm-gridcolumn columnwidth="2" name="gridcolumn27" horizontalalign="center">
+                    <wm-composite name="composite7_1">
+                        <wm-container class="col-md-9" name="container6_1">
+                            <wm-text name="text5" placeholder="" maxchars="1" textalign="center" datavalue="0"></wm-text>
+                        </wm-container>
+                    </wm-composite>
+                </wm-gridcolumn>
+                <wm-gridcolumn columnwidth="2" name="gridcolumn24" horizontalalign="center">
+                    <wm-composite name="composite9">
+                        <wm-container class="col-md-9" name="container8">
+                            <wm-text name="text7" placeholder="" textalign="center" datavalue="1"></wm-text>
+                        </wm-container>
+                    </wm-composite>
+                </wm-gridcolumn>
+                <wm-gridcolumn columnwidth="2" name="gridcolumn25_1" horizontalalign="center">
+                    <wm-composite name="composite11">
+                        <wm-container class="col-md-9" name="container10">
+                            <wm-text name="text9" placeholder="" maxchars="1" textalign="center" datavalue="4"></wm-text>
+                        </wm-container>
+                    </wm-composite>
+                </wm-gridcolumn>
+                <wm-gridcolumn columnwidth="2" name="gridcolumn26_1" horizontalalign="center">
+                    <wm-composite name="composite12">
+                        <wm-container class="col-md-9" name="container11">
+                            <wm-text name="text10" placeholder="" maxchars="1" textalign="center" datavalue="7"></wm-text>
+                        </wm-container>
+                    </wm-composite>
+                </wm-gridcolumn>
+                <wm-gridcolumn columnwidth="2" name="gridcolumn28_1" horizontalalign="center">
+                    <wm-composite name="composite13">
+                        <wm-container class="col-md-9" name="container12">
+                            <wm-text name="text11" placeholder="" maxchars="1" textalign="center" datavalue="9"></wm-text>
+                        </wm-container>
+                    </wm-composite>
+                </wm-gridcolumn>
+            </wm-gridrow>
+            <wm-gridrow name="gridrow8">
+                <wm-gridcolumn columnwidth="12" name="gridcolumn18" horizontalalign="center">
+                    <wm-button class="btn-secondary" caption="Verify" type="button" margin="unset" name="button8" on-click="Actions.goToPage_PendingLoans.invoke()"></wm-button>
+                </wm-gridcolumn>
+            </wm-gridrow>
+        </wm-layoutgrid>
+    </wm-dialog>
+</wm-partial>

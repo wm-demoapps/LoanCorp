@@ -1,0 +1,24 @@
+{
+  "displayName" : "facialRecognition",
+  "group" : "",
+  "iconUrl" : "/resources/images/imagelists/prefab-icon.png",
+  "resources" : {
+    "styles" : [ "/pages/Main/Main.css", "/resources/faceRecogination/style.css" ],
+    "scripts" : [ "/resources/faceRecogination/face-api.min.js" ]
+  },
+  "properties" : {
+    "url" : {
+      "type" : "string",
+      "displayName" : "Url",
+      "description" : "url",
+      "bindable" : "out-bound",
+      "value" : "./resources/images/imagelists/Profile-pic.png",
+      "widget" : "string",
+      "show" : false,
+      "showAt" : "",
+      "disabled" : true
+    }
+  },
+  "events" : { },
+  "methods" : { }
+}

@@ -1,0 +1,26 @@
+{
+  "ErrorMessage" : {
+    "_id" : "wm-ErrorMessage-wm.NotificationVariable-1706509464707",
+    "name" : "ErrorMessage",
+    "owner" : "Page",
+    "category" : "wm.NotificationVariable",
+    "dataBinding" : [ {
+      "target" : "content",
+      "value" : "inline",
+      "type" : "string"
+    }, {
+      "target" : "text",
+      "value" : "oops Apllication Not Submitted Please Check",
+      "type" : "string"
+    }, {
+      "target" : "class",
+      "value" : "Error",
+      "type" : "string"
+    }, {
+      "target" : "toasterPosition",
+      "value" : "bottom right",
+      "type" : "string"
+    } ],
+    "operation" : "toast"
+  }
+}

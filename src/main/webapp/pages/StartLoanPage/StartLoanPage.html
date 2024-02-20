@@ -1,0 +1,50 @@
+<wm-page pagetitle="Start Loan Page" name="page1" on-detach="Actions.goToPage_VideoKYCVerification.invoke()">
+    <wm-header content="logo_header" name="header1"></wm-header>
+    <wm-content name="content1">
+        <wm-page-content columnwidth="12" name="page_content1" padding="15px unset 0px unset">
+            <wm-container class="panel modal-md" name="container6">
+                <wm-layoutgrid name="layoutgrid4">
+                    <wm-gridrow name="gridrow5">
+                        <wm-gridcolumn columnwidth="12" name="gridcolumn9">
+                            <wm-container class="panel-heading flex v-center " name="container7">
+                                <wm-container class="panel-heading-icon" name="container8">
+                                    <wm-picture resizemode="cover" picturesource="resources/images/imagelists/home.png" width="35px" height="38px" name="picture2"></wm-picture>
+                                </wm-container>
+                                <wm-label padding="unset" caption="bind:appLocale.LABEL_HOME_IMPRVMENT_START" class="heading" name="label7"></wm-label>
+                            </wm-container>
+                        </wm-gridcolumn>
+                    </wm-gridrow>
+                    <wm-gridrow name="gridrow6">
+                        <wm-gridcolumn columnwidth="12" class="panel-body" name="gridcolumn10">
+                            <wm-label padding="unset" caption="Please keep the following documents handy to complete the application as smoothly as possible:" class="font-small" name="label8" margin="5px unset unset unset"></wm-label>
+                            <wm-container name="container9">
+                                <wm-label padding="unset" caption="Your Personal Details Contact info, including your mobile number." class="p bulleted-label" name="label9"></wm-label>
+                                <wm-label padding="unset" caption="Driving License OR Passport" class="p bulleted-label" name="label10"></wm-label>
+                                <wm-label padding="unset" caption="Bank Statement" class="p bulleted-label" name="label11"></wm-label>
+                            </wm-container>
+                            <wm-label padding="unset unset 20px unset" caption="Ready to Start? You'll be able to save your progress and come back to it later if needed." class="font-extrasmall label-muted-1" name="label12"></wm-label>
+                            <wm-container name="container10">
+                                <wm-layoutgrid name="layoutgrid5">
+                                    <wm-gridrow name="gridrow7" padding="unset unset 15px unset">
+                                        <wm-gridcolumn columnwidth="4" name="gridcolumn11"></wm-gridcolumn>
+                                        <wm-gridcolumn columnwidth="4" name="gridcolumn12">
+                                            <wm-button class="btn-secondary btn-block" caption="Start Loan Application" type="button" margin="unset" on-click="button1Click($event, widget)" name="button2"></wm-button>
+                                        </wm-gridcolumn>
+                                        <wm-gridcolumn columnwidth="4" name="gridcolumn13"></wm-gridcolumn>
+                                    </wm-gridrow>
+                                </wm-layoutgrid>
+                            </wm-container>
+                        </wm-gridcolumn>
+                    </wm-gridrow>
+                </wm-layoutgrid>
+            </wm-container>
+            <wm-layoutgrid name="layoutgrid3">
+                <wm-gridrow name="gridrow4">
+                    <wm-gridcolumn columnwidth="6" name="gridcolumn6"></wm-gridcolumn>
+                    <wm-gridcolumn columnwidth="6" name="gridcolumn7"></wm-gridcolumn>
+                </wm-gridrow>
+            </wm-layoutgrid>
+        </wm-page-content>
+    </wm-content>
+    <wm-footer content="footer" name="footer1"></wm-footer>
+</wm-page>

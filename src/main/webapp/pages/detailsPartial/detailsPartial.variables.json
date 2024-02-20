@@ -1,0 +1,32 @@
+{
+  "mdDataVariable" : {
+    "_id" : "wm-mdDataVariable-wm.Variable-1698821393054",
+    "name" : "mdDataVariable",
+    "owner" : "Page",
+    "category" : "wm.Variable",
+    "dataBinding" : [ ],
+    "dataSet" : [ {
+      "Heading1" : "name0",
+      "subHeading1" : "dataValue0"
+    }, {
+      "Heading2" : "name0",
+      "subHeading2" : "dataValue0"
+    }, {
+      "Heading3" : "name0",
+      "subHeading3" : "dataValue0"
+    }, {
+      "Heading4" : "name0",
+      "subHeading4" : "dataValue0"
+    }, {
+      "Heading5" : "name0",
+      "subHeading5" : "dataValue0"
+    }, {
+      "Heading6" : "name0",
+      "subHeading6" : "dataValue0"
+    } ],
+    "type" : "entry",
+    "isList" : true,
+    "twoWayBinding" : false,
+    "saveInPhonegap" : false
+  }
+}

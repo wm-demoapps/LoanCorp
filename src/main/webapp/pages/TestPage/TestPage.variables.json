@@ -1,0 +1,25 @@
+{
+  "Loancorpv2CreateCustomerDetails" : {
+    "_id" : "wm-Loancorpv2CreateCustomerDetails-wm.ServiceVariable-1698649584850",
+    "name" : "Loancorpv2CreateCustomerDetails",
+    "owner" : "Page",
+    "category" : "wm.ServiceVariable",
+    "dataBinding" : [ ],
+    "type" : "com.wavemaker.loancorpv2.loancorpv2.CustomerDetails",
+    "service" : "loancorpv2",
+    "operation" : "createCustomerDetails",
+    "operationId" : "CustomerDetailsController_createCustomerDetails",
+    "operationType" : "post",
+    "serviceType" : "DataService",
+    "dataSet" : [ ],
+    "isList" : false,
+    "maxResults" : 20,
+    "startUpdate" : false,
+    "autoUpdate" : true,
+    "inFlightBehavior" : "executeLast",
+    "transformationRequired" : false,
+    "saveInPhonegap" : false,
+    "isDefault" : true,
+    "controller" : "CustomerDetails"
+  }
+}

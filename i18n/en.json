@@ -1,0 +1,18 @@
+{
+  "messages" : {
+    "LABEL_HOME_IMPRVMENT_START" : "Let's get Started with Home Improvement Loan",
+    "LABEL_NEW_CUSTMER" : "I'm a New Customer",
+    "LABEL_RTRN_CUSTOMER" : "I'm a Returning Customer"
+  },
+  "formats" : {
+    "date" : "MMM d, y",
+    "time" : "h:mm:ss a",
+    "currency" : "USD"
+  },
+  "files" : {
+    "angular" : "en",
+    "fullCalendar" : null,
+    "moment" : null
+  },
+  "prefabMessages" : { }
+}

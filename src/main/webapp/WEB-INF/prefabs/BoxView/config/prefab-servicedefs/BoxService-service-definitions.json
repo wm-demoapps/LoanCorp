@@ -1,0 +1,34 @@
+{
+  "BoxController_getEmbedURL" : {
+    "id" : "BoxController_getEmbedURL",
+    "crudOperationId" : null,
+    "service" : "BoxService",
+    "controller" : "BoxController",
+    "operationType" : null,
+    "type" : "string",
+    "wmServiceOperationInfo" : {
+      "name" : "getEmbedURL",
+      "methodType" : "get",
+      "relativePath" : "/box/embedURL",
+      "directPath" : null,
+      "httpMethod" : "get",
+      "parameters" : [ {
+        "name" : "fileId",
+        "parameterType" : "query",
+        "required" : false,
+        "type" : "java.lang.String",
+        "readOnly" : false,
+        "contentType" : null
+      } ],
+      "definitions" : { },
+      "produces" : null,
+      "consumes" : null,
+      "proxySettings" : {
+        "web" : true,
+        "mobile" : true,
+        "withCredentials" : false
+      },
+      "securityDefinitions" : [ ]
+    }
+  }
+}

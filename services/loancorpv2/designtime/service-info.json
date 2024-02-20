@@ -1,0 +1,7 @@
+{
+  "id" : "loancorpv2",
+  "type" : "DataService",
+  "packageNames" : [ "com.wavemaker.loancorpv2.loancorpv2" ],
+  "title" : "loancorpv2",
+  "mockEnabled" : false
+}

@@ -1,0 +1,52 @@
+{
+  "mdPendingLoans" : {
+    "_id" : "wm-mdPendingLoans-wm.Variable-1698917481817",
+    "name" : "mdPendingLoans",
+    "owner" : "Page",
+    "category" : "wm.Variable",
+    "dataBinding" : [ ],
+    "dataSet" : [ {
+      "firstName" : "David",
+      "lastName" : "Bollinger",
+      "Dob" : "04/01/1998",
+      "Email" : "pavn@wm.com",
+      "Social SecurityNumber" : 12345,
+      "Mobile" : 999999990,
+      "Address" : "Huderabad,Miyapur"
+    }, {
+      "firstName" : "Ajay",
+      "lastName" : "Sahu",
+      "Dob" : "04/01/1998",
+      "Email" : "pavn@wm.com",
+      "Social SecurityNumber" : 12345,
+      "Mobile" : 999999990,
+      "Address" : "Huderabad,Miyapur"
+    } ],
+    "type" : "entry",
+    "isList" : true,
+    "twoWayBinding" : false,
+    "saveInPhonegap" : false
+  },
+  "sv_Get_Pending_Loans" : {
+    "_id" : "wm-sv_Get_Pending_Loans-wm.ServiceVariable-1701771976843",
+    "name" : "sv_Get_Pending_Loans",
+    "owner" : "Page",
+    "category" : "wm.ServiceVariable",
+    "dataBinding" : [ ],
+    "type" : "com.wavemaker.loancorpv2.loancorpv2.models.query.GetPendingLoansResponse",
+    "service" : "loancorpv2",
+    "operation" : "executeGetPendingLoans",
+    "operationId" : "QueryExecutionController_executeGetPendingLoans",
+    "operationType" : "get",
+    "serviceType" : "DataService",
+    "dataSet" : [ ],
+    "isList" : true,
+    "maxResults" : 100,
+    "startUpdate" : true,
+    "autoUpdate" : true,
+    "inFlightBehavior" : "executeLast",
+    "transformationRequired" : false,
+    "saveInPhonegap" : false,
+    "controller" : "QueryExecution"
+  }
+}

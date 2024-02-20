@@ -1,0 +1,35 @@
+{
+  "endpointAddress" : "https://maps.googleapis.com/maps/api/geocode/json",
+  "method" : "GET",
+  "headers" : { },
+  "redirectEnabled" : true,
+  "requestBody" : "",
+  "queryParams" : {
+    "address" : "Los+Angeles+CA+94036",
+    "key" : "AIzaSyADRRvGAn-Q2TcJsk0uxZ0J-qPHmlXK24A"
+  },
+  "authDetails" : null,
+  "contentType" : "application/json",
+  "multiParamInfoList" : null,
+  "sampleHttpResponseDetails" : {
+    "statusCode" : 200,
+    "headers" : {
+      "Content-Type" : [ "application/json; charset=UTF-8" ],
+      "Date" : [ "Wed, 08 Nov 2023 09:35:26 GMT" ],
+      "Pragma" : [ "no-cache" ],
+      "Expires" : [ "Fri, 01 Jan 1990 00:00:00 GMT" ],
+      "Cache-Control" : [ "no-cache, must-revalidate" ],
+      "Vary" : [ "Accept-Language" ],
+      "Access-Control-Allow-Origin" : [ "*" ],
+      "X-Goog-Maps-Metro-Area" : [ "Los Angeles, CA" ],
+      "Server" : [ "mafe" ],
+      "X-XSS-Protection" : [ "0" ],
+      "X-Frame-Options" : [ "SAMEORIGIN" ],
+      "Server-Timing" : [ "gfet4t7; dur=90" ],
+      "Alt-Svc" : [ "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000" ],
+      "Transfer-Encoding" : [ "chunked" ]
+    },
+    "responseBody" : "{\"results\":[{\"address_components\":[{\"long_name\":\"Los Angeles\",\"short_name\":\"Los Angeles\",\"types\":[\"locality\",\"political\",\"administrative_area_level_2\",\"political\",\"administrative_area_level_1\",\"political\",\"country\",\"political\"]}],\"formatted_address\":\"Los Angeles, CA, USA\",\"geometry\":{\"bounds\":{\"northeast\":{\"lat\":34.3373061,\"lng\":-118.1552891},\"southwest\":{\"lat\":33.7036519,\"lng\":-118.6681759}},\"location\":{\"lat\":34.0549076,\"lng\":-118.242643},\"location_type\":\"APPROXIMATE\",\"viewport\":{\"northeast\":{\"lat\":34.3373061,\"lng\":-118.1552891},\"southwest\":{\"lat\":33.7036519,\"lng\":-118.6681759}}},\"place_id\":\"ChIJE9on3F3HwoAR9AhGJW_fL-I\",\"types\":[\"locality\",\"political\"]}],\"status\":\"OK\"}",
+    "convertedResponse" : null
+  }
+}

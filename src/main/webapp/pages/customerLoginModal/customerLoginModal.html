@@ -1,0 +1,25 @@
+<wm-partial name="partial1">
+    <wm-layoutgrid name="layoutgrid1" columns="1">
+        <wm-gridrow name="gridrow3">
+            <wm-gridcolumn columnwidth="12" name="gridcolumn5"></wm-gridcolumn>
+        </wm-gridrow>
+        <wm-gridrow name="gridrow4">
+            <wm-gridcolumn columnwidth="1" name="gridcolumn6_1"></wm-gridcolumn>
+            <wm-gridcolumn columnwidth="10" name="gridcolumn6" horizontalalign="center">
+                <wm-button class="btn-secondary btn-block" caption="bind:appLocale.LABEL_NEW_CUSTMER" type="button" margin="unset" name="newCustonerButton" on-click="Actions.goToPage_StartLoanPage.invoke();newCustonerButtonClick($event, widget)"></wm-button>
+            </wm-gridcolumn>
+            <wm-gridcolumn columnwidth="1" name="gridcolumn5_1"></wm-gridcolumn>
+        </wm-gridrow>
+        <wm-gridrow name="gridrow5">
+            <wm-gridcolumn columnwidth="1" name="gridcolumn7_1"></wm-gridcolumn>
+            <wm-gridcolumn columnwidth="10" name="gridcolumn7" horizontalalign="center" padding="14px unset 30px unset">
+                <wm-button class="btn-block gradient-button font-medium  font-h4" caption="bind:appLocale.LABEL_RTRN_CUSTOMER" type="button" margin="unset" name="existingCustomerButton" on-click="existingCustomerButtonClick($event, widget)"></wm-button>
+                <wm-anchor margin="unset 0.5em" name="anchor1" caption="I’m a returining customer" class="gradient-anchor  font-medium  font-h4" show="false"></wm-anchor>
+            </wm-gridcolumn>
+            <wm-gridcolumn columnwidth="1" name="gridcolumn8_1"></wm-gridcolumn>
+        </wm-gridrow>
+        <wm-gridrow name="gridrow6">
+            <wm-gridcolumn columnwidth="12" name="gridcolumn8"></wm-gridcolumn>
+        </wm-gridrow>
+    </wm-layoutgrid>
+</wm-partial>

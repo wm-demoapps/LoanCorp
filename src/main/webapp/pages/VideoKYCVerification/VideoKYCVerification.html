@@ -1,0 +1,71 @@
+<wm-page pagetitle="Video Kyc Verification" name="page1">
+    <wm-header content="logo_header" name="header1"></wm-header>
+    <wm-content name="content1">
+        <wm-page-content columnwidth="12" name="page_content1" padding="1em unset 0em unset">
+            <wm-layoutgrid name="layoutgrid3">
+                <wm-gridrow name="gridrow6">
+                    <wm-gridcolumn columnwidth="12" name="gridcolumn7">
+                        <wm-container name="container6" class="panel modal-md">
+                            <wm-layoutgrid name="layoutgrid5" class="condensed">
+                                <wm-gridrow name="gridrow11">
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn14">
+                                        <wm-container name="container7" class="p panel-heading flex-inline v-center">
+                                            <wm-container class="panel-heading-icon" name="container8">
+                                                <wm-picture resizemode="cover" width="35px" height="38px" name="picture6" picturesource="resources/images/imagelists/home.png"></wm-picture>
+                                            </wm-container>
+                                            <wm-container name="container6_1" padding="unset unset unset 30px">
+                                                <wm-label padding="unset" class="h2 font-semibold flex v-center" caption="bind:&quot;Home Improvement Loan - Video KYC Verification&quot;" name="label8" margin="0px unset 8px unset"></wm-label>
+                                                <wm-label padding="unset" class="h4 text-muted font-base flex v-center  r-space-around" caption="bind:&quot;Please ensure your face is well lit and within circular frame. Video KYC is automatic and will take a few moments.&quot;" name="label9" margin="0px unset"></wm-label>
+                                            </wm-container>
+                                        </wm-container>
+                                    </wm-gridcolumn>
+                                </wm-gridrow>
+                                <wm-gridrow name="gridrow8">
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn11"></wm-gridcolumn>
+                                </wm-gridrow>
+                                <wm-gridrow name="gridrow12">
+                                    <wm-gridcolumn columnwidth="12" horizontalalign="center" name="gridcolumn15" padding="3em unset 2em unset">
+                                        <wm-picture resizemode="cover" name="picture7" picturesource="bind:Widgets.FacialRecognition1.url" width="150px" height="150px" pictureplaceholder="resources/images/imagelists/Profile-pic.png"></wm-picture>
+                                    </wm-gridcolumn>
+                                </wm-gridrow>
+                                <wm-gridrow name="gridrow13">
+                                    <wm-gridcolumn columnwidth="12" horizontalalign="center" name="gridcolumn16" padding="unset unset 2.3em unset">
+                                        <wm-button class="img-capture btn-secondary" caption="" type="button" margin="unset" on-click="Widgets.dialog1.open();button4Click($event, widget)" name="button4" iconclass="lc-camera" show="bind:Widgets.FacialRecognition1.url == &quot;./resources/images/imagelists/Profile-pic.png&quot;"></wm-button>
+                                        <wm-button class="btn-default btn-primary btn-sbmt" caption="Submit Application" type="button" margin="unset" name="submit_button" on-click="submit_buttonClick($event, widget)" show="bind:Widgets.FacialRecognition1.url != &quot;./resources/images/imagelists/Profile-pic.png&quot;"></wm-button>
+                                        <wm-prefab prefabname="FacialRecognition" name="FacialRecognition1"></wm-prefab>
+                                        <wm-prefab prefabname="facial_recognition" name="facial_recognition1" show="false"></wm-prefab>
+                                    </wm-gridcolumn>
+                                </wm-gridrow>
+                            </wm-layoutgrid>
+                        </wm-container>
+                    </wm-gridcolumn>
+                </wm-gridrow>
+                <wm-gridrow name="gridrow7">
+                    <wm-gridcolumn columnwidth="4" name="gridcolumn8"></wm-gridcolumn>
+                    <wm-gridcolumn columnwidth="4" name="gridcolumn9" horizontalalign="center"></wm-gridcolumn>
+                    <wm-gridcolumn columnwidth="4" name="gridcolumn12"></wm-gridcolumn>
+                </wm-gridrow>
+            </wm-layoutgrid>
+        </wm-page-content>
+    </wm-content>
+    <wm-dialog dialogtype="design-dialog" modal="true" title="" iconclass="lc-check icon-check" name="SuccesDialog" class="modal-xs" iconwidth="44px" iconheight="44px" closable="false">
+        <wm-layoutgrid name="layoutgrid2">
+            <wm-gridrow name="gridrow4">
+                <wm-gridcolumn columnwidth="12" name="gridcolumn5_1" horizontalalign="center">
+                    <wm-label padding="unset" name="label7" caption="Congratulations! Your loan has been submitted. You will be notified once it approved." class="h3 font-semibold" margin="6px unset unset unset"></wm-label>
+                </wm-gridcolumn>
+            </wm-gridrow>
+        </wm-layoutgrid>
+        <wm-dialogactions name="dialogactions1">
+            <wm-layoutgrid name="layoutgrid5_1">
+                <wm-gridrow name="gridrow9">
+                    <wm-gridcolumn columnwidth="4" name="gridcolumn14_2"></wm-gridcolumn>
+                    <wm-gridcolumn columnwidth="4" name="gridcolumn13" horizontalalign="center" padding="unset unset unset 6px">
+                        <wm-button class="btn-secondary btn-block" caption="Close" on-click="closeButtonClick($event, widget)" name="closeButton"></wm-button>
+                    </wm-gridcolumn>
+                    <wm-gridcolumn columnwidth="4" name="gridcolumn13_2"></wm-gridcolumn>
+                </wm-gridrow>
+            </wm-layoutgrid>
+        </wm-dialogactions>
+    </wm-dialog>
+</wm-page>

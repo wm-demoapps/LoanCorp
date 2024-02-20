@@ -1,0 +1,25 @@
+[ {
+  "name" : "admin",
+  "description" : null,
+  "roleConfig" : {
+    "landingPage" : "CustomerPage"
+  }
+}, {
+  "name" : "user",
+  "description" : null,
+  "roleConfig" : {
+    "landingPage" : "LoanDetails"
+  }
+}, {
+  "name" : "customer",
+  "description" : null,
+  "roleConfig" : {
+    "landingPage" : "StartLoanPage"
+  }
+}, {
+  "name" : "officer",
+  "description" : null,
+  "roleConfig" : {
+    "landingPage" : "LandingPage"
+  }
+} ]

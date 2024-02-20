@@ -1,0 +1,49 @@
+<wm-prefab-container name="prefab_container1">
+    <wm-layoutgrid name="layoutgrid1">
+        <wm-gridrow name="gridrow4">
+            <wm-gridcolumn columnwidth="12" name="gridcolumn4" horizontalalign="center">
+                <wm-label padding="unset" name="label1" caption="Just Face It" class="h1" show="false"></wm-label>
+            </wm-gridcolumn>
+        </wm-gridrow>
+        <wm-gridrow name="gridrow3_1">
+            <wm-gridcolumn columnwidth="12" name="gridcolumn3_1" horizontalalign="center" padding="24px unset unset unset">
+                <wm-picture resizemode="cover" name="picture1" picturesource="resources/images/imagelists/Verify_Identity_2.png" width="600" height="400" show="false"></wm-picture>
+            </wm-gridcolumn>
+        </wm-gridrow>
+        <wm-gridrow name="gridrow2">
+            <wm-gridcolumn columnwidth="12" name="gridcolumn2" horizontalalign="center" padding="24px unset unset unset">
+                <wm-button class="open-dialog-btn" caption="" type="button" margin="unset" name="button1" on-click="Widgets.dialogVideo.open()" iconclass="" width="57px" height="53px"></wm-button>
+            </wm-gridcolumn>
+        </wm-gridrow>
+        <!--<wm-gridrow name="gridrow1">-->
+        <!--    <wm-gridcolumn columnwidth="12" name="gridcolumn1" class="center-aligned">-->
+        <!--        <wm-html name="html1" show="false"><video id="video" width="600" height="450" autoplay=""></video></wm-html>-->
+        <!--    </wm-gridcolumn>-->
+        <!--</wm-gridrow>-->
+    </wm-layoutgrid>
+    <wm-dialog dialogtype="design-dialog" modal="true" title="Identification" iconclass="wm-sl-l sl-face-id fa-2x" name="dialogVideo" on-opened="dialogVideoOpened($event, widget)" class="modal-lg">
+        <wm-layoutgrid name="layoutgrid2">
+            <wm-gridrow name="gridrow3">
+                <wm-gridcolumn columnwidth="12" name="gridcolumn3" class="center-aligned" horizontalalign="center">
+                    <wm-html name="html1"><video id="video" autoplay=""></video></wm-html>
+                </wm-gridcolumn>
+            </wm-gridrow>
+        </wm-layoutgrid>
+        <wm-layoutgrid name="layoutgrid3">
+            <wm-gridrow name="gridrow5">
+                <wm-gridcolumn columnwidth="4" name="gridcolumn9"></wm-gridcolumn>
+                <wm-gridcolumn columnwidth="4" name="gridcolumn5" horizontalalign="center">
+                    <wm-button class="btn-default btn-primary" caption="Capture Image" type="button" margin="unset" name="Capture_Image" on-click="Capture_ImageClick($event, widget)"></wm-button>
+                </wm-gridcolumn>
+                <wm-gridcolumn columnwidth="4" name="gridcolumn6">
+                    <wm-html name="html2" show="false">
+                        <canvas id="canvas" width="400" height="300"></canvas></wm-html>
+                </wm-gridcolumn>
+            </wm-gridrow>
+            <wm-gridrow name="gridrow6">
+                <wm-gridcolumn columnwidth="6" name="gridcolumn7"></wm-gridcolumn>
+                <wm-gridcolumn columnwidth="6" name="gridcolumn8"></wm-gridcolumn>
+            </wm-gridrow>
+        </wm-layoutgrid>
+    </wm-dialog>
+</wm-prefab-container>

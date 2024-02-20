@@ -1,0 +1,95 @@
+[ {
+  "name" : "Common",
+  "type" : "PARTIAL",
+  "params" : [ ]
+}, {
+  "name" : "CustomerPage",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "HomeImprovementPage",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "LandingPage",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "LoanDetails",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "Login",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "Main",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "PendingLoans",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "PersonalDetails",
+  "type" : "PARTIAL",
+  "params" : [ ]
+}, {
+  "name" : "StartLoanPage",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "TestPage",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "UserValidation",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "VideoKYCVerification",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "customerLoginModal",
+  "type" : "PARTIAL",
+  "params" : [ ]
+}, {
+  "name" : "detailsPartial",
+  "type" : "PARTIAL",
+  "params" : [ {
+    "name" : "heading",
+    "type" : "string"
+  }, {
+    "name" : "details",
+    "type" : "string"
+  } ]
+}, {
+  "name" : "footer",
+  "type" : "FOOTER",
+  "params" : [ ]
+}, {
+  "name" : "header",
+  "type" : "HEADER",
+  "params" : [ ]
+}, {
+  "name" : "leftnav",
+  "type" : "LEFTNAV",
+  "params" : [ ]
+}, {
+  "name" : "loanApplierDetails",
+  "type" : "PARTIAL",
+  "params" : [ ]
+}, {
+  "name" : "logo_header",
+  "type" : "HEADER",
+  "params" : [ ]
+}, {
+  "name" : "rightnav",
+  "type" : "RIGHTNAV",
+  "params" : [ ]
+}, {
+  "name" : "topnav",
+  "type" : "TOPNAV",
+  "params" : [ ]
+} ]

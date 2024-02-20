@@ -1,0 +1,86 @@
+{
+  "description" : null,
+  "methods" : {
+    "addToLoanDetails" : [ {
+      "url" : {
+        "value" : "/toLoanDetails",
+        "modified" : false
+      },
+      "method" : {
+        "value" : "POST",
+        "modified" : false
+      },
+      "accessSpecifier" : "APP_ONLY",
+      "parameters" : {
+        "loanDetailsReq" : {
+          "name" : {
+            "value" : "loanDetailsReq",
+            "modified" : false
+          },
+          "in" : {
+            "value" : "BODY",
+            "modified" : false
+          },
+          "required" : {
+            "value" : true,
+            "modified" : true
+          }
+        }
+      }
+    } ],
+    "createLoanApplication" : [ {
+      "url" : {
+        "value" : "/loanApplication",
+        "modified" : false
+      },
+      "method" : {
+        "value" : "POST",
+        "modified" : false
+      },
+      "accessSpecifier" : "APP_ONLY",
+      "parameters" : {
+        "createApplicationReq" : {
+          "name" : {
+            "value" : "createApplicationReq",
+            "modified" : false
+          },
+          "in" : {
+            "value" : "BODY",
+            "modified" : false
+          },
+          "required" : {
+            "value" : true,
+            "modified" : true
+          }
+        }
+      }
+    } ],
+    "getCreatedLoanApplicationById" : [ {
+      "url" : {
+        "value" : "/createdLoanApplicationById",
+        "modified" : false
+      },
+      "method" : {
+        "value" : "GET",
+        "modified" : false
+      },
+      "accessSpecifier" : "APP_ONLY",
+      "parameters" : {
+        "id" : {
+          "name" : {
+            "value" : "id",
+            "modified" : false
+          },
+          "in" : {
+            "value" : "QUERY",
+            "modified" : false
+          },
+          "required" : {
+            "value" : false,
+            "modified" : false
+          }
+        }
+      }
+    } ]
+  }
+}

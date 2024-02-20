@@ -1,0 +1,21 @@
+<wm-page pagetitle="Pending Loans" name="page1">
+    <wm-header content="header" name="header1"></wm-header>
+    <wm-content name="content1">
+        <wm-left-panel columnwidth="2" content="leftnav" name="left_panel1"></wm-left-panel>
+        <wm-page-content columnwidth="12" name="page_content1" padding="3em 3.5em" class="bg-none">
+            <wm-container name="container4_1">
+                <wm-table statehandler="URL" name="executeGetPendingLoansTable2" title="" dataset="bind:Variables.sv_Get_Pending_Loans.dataSet" navigation="Basic" gridclass="table-hover table-striped" class="pending-loans-table">
+                    <wm-table-column binding="loanDetailsId" caption="Loan Id" width="16.67%" edit-widget-type="number" show="true" type="long" readonly="false"></wm-table-column>
+                    <wm-table-column binding="loanType" caption="Loan Type" width="16.67%" edit-widget-type="text" show="true" type="string" readonly="false"></wm-table-column>
+                    <wm-table-column binding="fname" caption="First Name" width="16.67%" edit-widget-type="text" show="true" type="string" readonly="false"></wm-table-column>
+                    <wm-table-column binding="lname" caption="Last Name" width="16.67%" edit-widget-type="text" show="true" type="string" readonly="false"></wm-table-column>
+                    <wm-table-column binding="email" caption="E-Mail" width="16.67%" edit-widget-type="text" show="true" type="string" readonly="false"></wm-table-column>
+                    <wm-table-column binding="rowOperations" caption="Actions" width="120px" searchable="false" show="true" type="custom" readonly="true" sortable="false"></wm-table-column>
+                    <wm-table-row-action key="updaterow" display-name="View Details" show="true" class="btn-warning" iconclass="" title="View Details" action="executeGetPendingLoansTable2_updaterowAction($event, row);Actions.goToPage_LoanDetails.invoke()"
+                        disabled="false" widget-type="button"></wm-table-row-action>
+                </wm-table>
+            </wm-container>
+        </wm-page-content>
+    </wm-content>
+    <wm-footer content="footer" name="footer1"></wm-footer>
+</wm-page>

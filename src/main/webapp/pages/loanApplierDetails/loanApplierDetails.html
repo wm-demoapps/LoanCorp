@@ -1,0 +1,85 @@
+<wm-partial name="partial1">
+    <wm-layoutgrid name="layoutgrid2">
+        <wm-gridrow name="gridrow10">
+            <wm-gridcolumn columnwidth="12" name="gridcolumn19" padding="unset unset 3em unset">
+                <wm-container name="container2" class="flex-inline v-center">
+                    <wm-icon name="icon6" iconclass="wi wi-chevron-left fa-2x"></wm-icon>
+                    <wm-anchor margin="unset 0em" class="app-anchor label-muted-1 text-underline" caption="Back" on-click="Actions.goToPage_PendingLoans.invoke()" name="anchor4"></wm-anchor>
+                </wm-container>
+            </wm-gridcolumn>
+        </wm-gridrow>
+        <wm-gridrow name="gridrow9">
+            <wm-gridcolumn columnwidth="12" name="gridcolumn17">
+                <wm-label padding="unset" caption="Personal Details" name="label15" class="p font-h4 font-medium line-height-el"></wm-label>
+            </wm-gridcolumn>
+        </wm-gridrow>
+        <wm-gridrow name="gridrow2">
+            <wm-gridcolumn columnwidth="12" name="gridcolumn3" padding="unset unset 12px unset">
+                <wm-container name="container4" class="flex-inline v-center">
+                    <wm-picture resizemode="cover" picturesource="bind:Variables.sv_Get_kyc_image.dataSet[$i].kycImage" width="72px" height="72px" shape="circle" name="picture2"></wm-picture>
+                    <wm-container name="container3" padding="unset unset unset 16px">
+                        <wm-label padding="unset" name="label13" class="text-capitalize app-label p font-small font-semibold" caption="bind:Variables.sv_Get_Loan_Details_by_Id.dataSet.customerDetails.fname"></wm-label>
+                        <wm-label padding="unset" name="label14" class="app-label p label-muted-1" caption="bind:Variables.sv_Get_Loan_Details_by_Id.dataSet.customerDetails.ssnNo"></wm-label>
+                    </wm-container>
+                </wm-container>
+            </wm-gridcolumn>
+        </wm-gridrow>
+    </wm-layoutgrid>
+    <wm-layoutgrid name="layoutgrid3">
+        <wm-gridrow name="gridrow4">
+            <wm-gridcolumn columnwidth="12" name="gridcolumn7" horizontalalign="left" padding="12px unset">
+                <wm-container name="container5" class="flex-inline v-center">
+                    <wm-icon name="icon4" iconclass="lc-phone" class="userdetails-icon label-muted-1"></wm-icon>
+                    <wm-label padding="unset" name="label5" caption="bind:Variables.sv_Get_Loan_Details_by_Id.dataSet.customerDetails.mobileno" margin="unset unset 0px unset"></wm-label>
+                </wm-container>
+            </wm-gridcolumn>
+        </wm-gridrow>
+        <wm-gridrow name="gridrow5">
+            <wm-gridcolumn columnwidth="12" name="gridcolumn9" horizontalalign="left" padding="12px unset">
+                <wm-container name="container6" class="flex-inline v-center">
+                    <wm-icon name="icon2" iconclass="lc-mail" class="userdetails-icon  label-muted-1"></wm-icon>
+                    <wm-label padding="unset" name="label3" caption="bind:Variables.sv_Get_Loan_Details_by_Id.dataSet.customerDetails.email" margin="unset unset 0px unset"></wm-label>
+                </wm-container>
+            </wm-gridcolumn>
+        </wm-gridrow>
+        <wm-gridrow name="gridrow5_1">
+            <wm-gridcolumn columnwidth="12" name="gridcolumn9_1" horizontalalign="left" padding="12px unset 24px unset">
+                <wm-container name="container7" class="flex-inline v-center h-center">
+                    <wm-icon name="icon3" iconclass="lc-date" class="userdetails-icon  label-muted-1"></wm-icon>
+                    <wm-label padding="unset" name="label4" caption="bind:Variables.sv_Get_Loan_Details_by_Id.dataSet.customerDetails.dob" margin="unset unset 0px unset"></wm-label>
+                </wm-container>
+            </wm-gridcolumn>
+        </wm-gridrow>
+        <wm-gridrow name="gridrow6" padding="unset unset 3.5em unset">
+            <wm-gridcolumn columnwidth="12" name="gridcolumn11" horizontalalign="left">
+                <wm-container name="container8" class="flex-inline v-center">
+                    <wm-icon name="icon4_1" iconclass="lc-location" class="userdetails-icon  label-muted-1"></wm-icon>
+                    <wm-label padding="unset" name="label5_1" caption="bind:Variables.sv_Get_Loan_Details_by_Id.dataSet.customerDetails.address" margin="unset unset 0px unset"></wm-label>
+                </wm-container>
+            </wm-gridcolumn>
+        </wm-gridrow>
+    </wm-layoutgrid>
+    <wm-layoutgrid name="layoutgrid4" class="condensed border-top">
+        <wm-gridrow name="gridrow11" padding="3em unset unset unset">
+            <wm-gridcolumn columnwidth="12" name="gridcolumn14">
+                <wm-label padding="unset" caption="Loan Requirement" name="label21" class="text-uppercase h3 font-semibold "></wm-label>
+            </wm-gridcolumn>
+        </wm-gridrow>
+        <wm-gridrow name="gridrow12">
+            <wm-gridcolumn columnwidth="12" horizontalalign="left" name="gridcolumn16" padding="unset unset 32px unset">
+                <wm-label padding="unset" caption="Amount" class="p app-label text-muted" name="label15_1" margin="unset unset 6px unset"></wm-label>
+                <wm-label padding="unset" caption="bind:Variables.sv_Get_Loan_Details_by_Id.dataSet.loanDetails.amount | toCurrency: '$'" name="label16" class="font-h2 font-semibold"></wm-label>
+            </wm-gridcolumn>
+        </wm-gridrow>
+        <wm-gridrow name="gridrow13">
+            <wm-gridcolumn columnwidth="6" horizontalalign="left" name="gridcolumn18">
+                <wm-label padding="unset" caption="Tenure" class="app-label p text-muted" name="label17" margin="unset unset 6px unset"></wm-label>
+                <wm-label padding="unset" caption="bind:Variables.sv_Get_Loan_Details_by_Id.dataSet.loanDetails.tenure | suffix: ' Years'" class="app-label font-h2 font-semibold" name="label18"></wm-label>
+            </wm-gridcolumn>
+            <wm-gridcolumn columnwidth="6" name="gridcolumn19_1">
+                <wm-label padding="unset" caption="Interest Rate" class="p app-label text-muted" name="label19" margin="unset unset 6px unset"></wm-label>
+                <wm-label padding="unset" caption="bind:Variables.sv_Get_Loan_Details_by_Id.dataSet.loanDetails.interestRate | suffix: '%'" class="app-label font-h2 font-semibold" name="label20"></wm-label>
+            </wm-gridcolumn>
+        </wm-gridrow>
+    </wm-layoutgrid>
+</wm-partial>

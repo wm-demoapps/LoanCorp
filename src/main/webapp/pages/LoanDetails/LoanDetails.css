@@ -1,0 +1,30 @@
+pdf-icon {
+    position: absolute;
+    top: 0px;
+}
+
+.prfb-cls {
+    /* bottom: 2px; */
+    bottom: 40px;
+    right: 5px;
+}
+
+app-prefab-boxview>div>a>.anchor-caption {
+    opacity: 0;
+}
+
+.wi-remove-red-eye {
+    opacity: 0;
+}
+
+.dmnt-name {
+    position: absolute;
+    left: 59px;
+    top: 17px;
+}
+
+.icon-clear {
+    background-color: red;
+    border-radius: 50%;
+    color: white;
+}

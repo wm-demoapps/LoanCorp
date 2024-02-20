@@ -1,0 +1,61 @@
+{
+  "displayName" : "EntityExtraction",
+  "group" : "",
+  "iconUrl" : "/resources/images/imagelists/extraction.png",
+  "resources" : {
+    "styles" : [ "/pages/Main/Main.css" ],
+    "scripts" : [ ]
+  },
+  "properties" : {
+    "url" : {
+      "type" : "string",
+      "displayName" : "URL",
+      "description" : "Document URL",
+      "bindable" : "in-bound",
+      "value" : "",
+      "widget" : "string",
+      "show" : true,
+      "showAt" : "",
+      "disabled" : false
+    },
+    "entities" : {
+      "type" : "string",
+      "displayName" : "Entities",
+      "description" : "Required list of entities from document.",
+      "bindable" : "in-bound",
+      "isList" : true,
+      "value" : "bind:[\"state\"]",
+      "widget" : "list",
+      "show" : true,
+      "showAt" : "",
+      "disabled" : false
+    },
+    "entityvalues" : {
+      "type" : "object",
+      "displayName" : "EntityValues",
+      "description" : "Key-value pair of  requested each entity and value.",
+      "bindable" : "out-bound",
+      "isList" : false,
+      "value" : "bind:Variables.GetEntityValues.dataSet",
+      "widget" : "string",
+      "show" : false,
+      "showAt" : "",
+      "disabled" : true
+    }
+  },
+  "events" : {
+    "onSuccess" : {
+      "description" : "Callback action which will triggered on success of the prefab",
+      "eventData" : "",
+      "displayName" : "Success"
+    }
+  },
+  "methods" : {
+    "getEntityValues" : {
+      "description" : "get entity values",
+      "parameters" : [ ],
+      "returnType" : "void",
+      "example" : ""
+    }
+  }
+}

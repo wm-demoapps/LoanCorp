@@ -1,0 +1,30 @@
+{
+  "svGetCustomerLoanDetails" : {
+    "_id" : "wm-svGetCustomerLoanDetails-wm.ServiceVariable-1700734552743",
+    "name" : "svGetCustomerLoanDetails",
+    "owner" : "Page",
+    "category" : "wm.ServiceVariable",
+    "dataBinding" : [ {
+      "target" : "id",
+      "value" : "bind:Variables.sv_GetCustomerId.dataSet[$i].customerId",
+      "type" : "string"
+    } ],
+    "type" : "com.wavemaker.loancorpv2.loancorpv2.models.query.GetCustomerLoanDetailsResponse",
+    "service" : "loancorpv2",
+    "operation" : "executeGetCustomerLoanDetails",
+    "operationId" : "QueryExecutionController_executeGetCustomerLoanDetails",
+    "operationType" : "get",
+    "serviceType" : "DataService",
+    "dataSet" : [ ],
+    "isList" : true,
+    "maxResults" : 20,
+    "onBeforeUpdate" : "svGetCustomerLoanDetailsonBeforeUpdate(variable, inputData, options)",
+    "onSuccess" : "svGetCustomerLoanDetailsonSuccess(variable, data, options)",
+    "startUpdate" : true,
+    "autoUpdate" : false,
+    "inFlightBehavior" : "executeLast",
+    "transformationRequired" : false,
+    "saveInPhonegap" : false,
+    "controller" : "QueryExecution"
+  }
+}

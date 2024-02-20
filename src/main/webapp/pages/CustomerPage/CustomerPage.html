@@ -1,0 +1,36 @@
+<wm-page pagetitle="Customer Page" name="page1">
+    <wm-header content="header" name="header1"></wm-header>
+    <wm-content name="content1">
+        <wm-left-panel columnwidth="2" content="leftnav" name="left_panel1"></wm-left-panel>
+        <wm-page-content columnwidth="10" name="page_content1">
+            <wm-list listclass="list-group" name="mdTestDataList1" dataset="bind:Variables.mdTestData.dataSet.ld" itemclass="list-group-item" template="true" template-name="Contact List" itemsperrow="xs-1 sm-1 md-1 lg-1" class="media-list" navigation="Basic" on-click="Widgets.revisedOffer_dialog.open()"
+                show="false">
+                <wm-listtemplate layout="inline" name="listtemplate2">
+                    <wm-container class="media-left" name="container4">
+                        <wm-picture width="32pt" height="32pt" name="Picture" shape="circle" picturesource="resources/images/imagelists/default-image.png" class="media-object"></wm-picture>
+                    </wm-container>
+                    <wm-container class="media-body" name="container5">
+                        <wm-label class="p media-heading" name="Name" caption="bind:Variables.mdTestData.dataSet.ld[$i]['Loan Amount']" fontunit="em" padding="unset unset unset 1.25em"></wm-label>
+                        <wm-label padding="unset" name="label4" class="app-label status-lbl text-info" caption="Pending"></wm-label>
+                    </wm-container>
+                </wm-listtemplate>
+            </wm-list>
+            <wm-container name="container4_1"></wm-container>
+            <wm-table statehandler="URL" title="" dataset="bind:Variables.svGetCustomerLoanDetails.dataSet" navigation="Basic" name="table1">
+                <wm-table-column binding="id" caption="Id" pcdisplay="true" mobiledisplay="true" tabletdisplay="true" type="long"></wm-table-column>
+                <wm-table-column binding="creationTime" caption="Creation Time" pcdisplay="true" mobiledisplay="true" tabletdisplay="true" type="timestamp"></wm-table-column>
+                <wm-table-column binding="loanType" caption="Loan Type" pcdisplay="true" mobiledisplay="true" tabletdisplay="true" type="string"></wm-table-column>
+                <wm-table-column binding="status" caption="Status" pcdisplay="true" mobiledisplay="true" tabletdisplay="true" type="string"></wm-table-column>
+            </wm-table>
+        </wm-page-content>
+    </wm-content>
+    <wm-footer content="footer" name="footer1"></wm-footer>
+    <wm-dialog dialogtype="design-dialog" modal="true" title="Revised Offer" iconclass="wi wi-file-text" name="revisedOffer_dialog">
+        <wm-dialogactions name="dialogactions1">
+            <wm-button class="btn-primary" caption="Close" on-click="closeDialog()" name="button1"></wm-button>
+        </wm-dialogactions>
+        <wm-container name="container3" content="detailsPartial">
+            <wm-param name="details" value="bind:Variables.mdTestData.dataSet.ld" type="string"></wm-param>
+        </wm-container>
+    </wm-dialog>
+</wm-page>

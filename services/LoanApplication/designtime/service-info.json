@@ -1,0 +1,8 @@
+{
+  "id" : "LoanApplication",
+  "type" : "JavaService",
+  "packageNames" : [ "com.wavemaker.loancorpv2.loanapplication" ],
+  "serviceClassNames" : [ "com.wavemaker.loancorpv2.loanapplication.LoanApplication" ],
+  "title" : "LoanApplication",
+  "mockEnabled" : false
+}

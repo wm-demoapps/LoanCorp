@@ -1,0 +1,27 @@
+.wm-app .app-partial {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.08), 0 1px 2px 0 rgba(0, 0, 0, 0.13);
+    /* background-color: #f8f9fd; */
+    margin-bottom: 48px;
+    border-radius: 6px;
+}
+
+.set-pfb {
+    position: absolute;
+}
+
+app-prefab-boxview>div>a>.anchor-caption {
+    opacity: 0;
+}
+
+.wi-remove-red-eye {
+    opacity: 0;
+}
+
+
+/* . wi-remove-red-eye {
+    opacity: 0;
+}
+
+.sr-only {
+    opacity: 0;
+} */

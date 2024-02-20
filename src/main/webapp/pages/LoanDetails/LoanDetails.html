@@ -1,0 +1,495 @@
+<wm-page pagetitle="Loan Details" name="page1">
+    <wm-header content="header" name="header1"></wm-header>
+    <wm-content name="content1">
+        <wm-left-panel columnwidth="3" name="left_panel1" content="loanApplierDetails"></wm-left-panel>
+        <wm-page-content columnwidth="9" name="page_content1" class="bg-none" padding="3em 1.5em">
+            <wm-layoutgrid name="layoutgrid8">
+                <wm-gridrow name="gridrow17">
+                    <wm-gridcolumn columnwidth="6" name="gridcolumn30_1" padding="unset 1em unset 0.5em">
+                        <wm-container name="container10_3" padding="unset unset 2.5em unset">
+                            <wm-layoutgrid name="layoutgrid10_3">
+                                <wm-gridrow name="gridrow25">
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn44">
+                                        <wm-label padding="unset" caption="bind:Variables.sv_Get_Loan_Details_by_Id.dataSet.customerDetails.fname" class="text-capitalize h1 font-semibold" name="label51" margin="0px unset unset unset"></wm-label>
+                                    </wm-gridcolumn>
+                                </wm-gridrow>
+                                <wm-gridrow padding="unset unset 12px unset" name="gridrow26">
+                                    <wm-gridcolumn columnwidth="6" name="gridcolumn45">
+                                        <wm-container class="flex-inline v-center" name="container11_1">
+                                            <wm-label padding="unset 8px unset unset" caption="CREDIT SCORE DATA" margin="5px unset 0px unset" class="font-h3 font-semibold" name="label52"></wm-label>
+                                            <wm-icon iconclass="lc-info fa-lg" class="text-muted" name="icon7_1"></wm-icon>
+                                        </wm-container>
+                                    </wm-gridcolumn>
+                                    <wm-gridcolumn columnwidth="6" horizontalalign="right" name="gridcolumn46">
+                                        <wm-container class="flex-inline v-center" name="container12_1">
+                                            <wm-label padding="unset 5px unset unset" caption="Powered by " margin="10px unset 0px unset" class="text-muted font-xxsmall" name="label53"></wm-label>
+                                            <wm-picture resizemode="cover" picturesource="resources/images/imagelists/Bitmap.png" name="picture2"></wm-picture>
+                                        </wm-container>
+                                    </wm-gridcolumn>
+                                </wm-gridrow>
+                                <wm-gridrow padding="12px unset" name="gridrow27">
+                                    <wm-gridcolumn columnwidth="8" name="gridcolumn47">
+                                        <wm-buttongroup name="buttongroup4">
+                                            <wm-button type="button" caption="Credit Score" class="btn btn-default " name="button11"></wm-button>
+                                            <wm-button type="button" caption="Credit Score history" class="btn btn-default" name="button12"></wm-button>
+                                        </wm-buttongroup>
+                                    </wm-gridcolumn>
+                                    <wm-gridcolumn columnwidth="4" horizontalalign="right" name="gridcolumn48">
+                                        <wm-label padding="unset 5px unset unset" caption="For the month of" class="text-muted font-xxsmall" name="label54" margin="10px unset unset unset"></wm-label>
+                                        <wm-label padding="unset" caption="Dec '21" class="font-semibold font-xxsmall" name="label55"></wm-label>
+                                    </wm-gridcolumn>
+                                </wm-gridrow>
+                                <wm-gridrow padding="3em unset unset unset" name="gridrow28">
+                                    <wm-gridcolumn columnwidth="3" name="gridcolumn56_1"></wm-gridcolumn>
+                                    <wm-gridcolumn columnwidth="6" name="gridcolumn54_2">
+                                        <wm-progress-circle width="180px" height="180px" name="progress_circle1" datavalue="100"></wm-progress-circle>
+                                    </wm-gridcolumn>
+                                    <wm-gridcolumn columnwidth="3" name="gridcolumn55_1"></wm-gridcolumn>
+                                </wm-gridrow>
+                                <wm-gridrow padding="unset unset 1em unset" name="gridrow29">
+                                    <wm-gridcolumn columnwidth="4" horizontalalign="left" name="gridcolumn52">
+                                        <wm-container name="container23" class="border-right">
+                                            <wm-label padding="unset" caption="bind:'<span class=&quot;text-muted&quot;> Amounts Owed </span>' +'<span class=&quot;font-medium&quot;> $298K </span>'" class="p font-h6  text-left" name="label57_3"></wm-label>
+                                            <wm-container class="flex-inline v-center" name="container24">
+                                                <wm-progress-bar datavalue="100" class="pr-ws-hs progress-bar-success" name="progress_bar47"></wm-progress-bar>
+                                                <wm-progress-bar datavalue="100" class="pr-ws-hs progress-bar-success" name="progress_bar48_1"></wm-progress-bar>
+                                                <wm-progress-bar datavalue="100" class="pr-ws-hs progress-bar-success" name="progress_bar49_1"></wm-progress-bar>
+                                                <wm-progress-bar datavalue="100" class="pr-ws-hs progress-bar-success" name="progress_bar50_1"></wm-progress-bar>
+                                                <wm-progress-bar datavalue="100" class="pr-ws-hs progress-bar-success" name="progress_bar51_1"></wm-progress-bar>
+                                                <wm-progress-bar datavalue="100" class="pr-ws-hs progress-bar-success" name="progress_bar52"></wm-progress-bar>
+                                                <wm-progress-bar datavalue="100" class="pr-ws-hs progress-bar-success" name="progress_bar53_1"></wm-progress-bar>
+                                                <wm-progress-bar datavalue="100" class="pr-ws-hs progress-bar-success" name="progress_bar54_1"></wm-progress-bar>
+                                                <wm-progress-bar class="pr-ws-hs " name="progress_bar55_1"></wm-progress-bar>
+                                                <wm-progress-bar class="pr-ws-hs" name="progress_bar56"></wm-progress-bar>
+                                            </wm-container>
+                                        </wm-container>
+                                    </wm-gridcolumn>
+                                    <wm-gridcolumn columnwidth="4" horizontalalign="center" name="gridcolumn53_1">
+                                        <wm-container name="container25" class="border-right" padding="unset 5px">
+                                            <wm-label padding="unset" class="p font-h6 text-left" caption="bind:'<span class=&quot;text-muted&quot;> Payment Histoy </span>' + '<span class=&quot;font-medium&quot;> 98% </span>'" name="label58_3"></wm-label>
+                                            <wm-container class="flex-inline v-center" name="container26">
+                                                <wm-progress-bar datavalue="100" class="pr-ws-hs progress-bar-success" name="progress_bar57_1"></wm-progress-bar>
+                                                <wm-progress-bar datavalue="100" class="pr-ws-hs progress-bar-success" name="progress_bar58_1"></wm-progress-bar>
+                                                <wm-progress-bar datavalue="100" class="pr-ws-hs progress-bar-success" name="progress_bar59_1"></wm-progress-bar>
+                                                <wm-progress-bar datavalue="100" class="pr-ws-hs progress-bar-success" name="progress_bar60_1"></wm-progress-bar>
+                                                <wm-progress-bar datavalue="100" class="pr-ws-hs progress-bar-success" name="progress_bar61_1"></wm-progress-bar>
+                                                <wm-progress-bar datavalue="100" class="pr-ws-hs progress-bar-success" name="progress_bar62_1"></wm-progress-bar>
+                                                <wm-progress-bar datavalue="100" class="pr-ws-hs progress-bar-success" name="progress_bar63_1"></wm-progress-bar>
+                                                <wm-progress-bar datavalue="100" class="pr-ws-hs progress-bar-success" name="progress_bar64"></wm-progress-bar>
+                                                <wm-progress-bar datavalue="0" class="pr-ws-hs" name="progress_bar65"></wm-progress-bar>
+                                                <wm-progress-bar datavalue="0" class="pr-ws-hs" name="progress_bar66"></wm-progress-bar>
+                                            </wm-container>
+                                        </wm-container>
+                                    </wm-gridcolumn>
+                                    <wm-gridcolumn columnwidth="4" horizontalalign="center" name="gridcolumn54_1" padding="unset unset unset 2px">
+                                        <wm-container name="container27" padding="unset unset unset 5px">
+                                            <wm-label padding="unset" class="p font-h6  text-left" caption="bind:'<span class=&quot;text-muted&quot;> Length of History </span>' +'<span class=&quot;font-medium&quot;> 6yrs </span>'" name="label59_2"></wm-label>
+                                            <wm-container class="flex-inline v-center" name="container28">
+                                                <wm-progress-bar datavalue="100" captionplacement="hidden" class="pr-ws-hs progress-bar-success" name="progress_bar67"></wm-progress-bar>
+                                                <wm-progress-bar datavalue="100" class="pr-ws-hs progress-bar-success" name="progress_bar68"></wm-progress-bar>
+                                                <wm-progress-bar datavalue="100" class="pr-ws-hs progress-bar-success" name="progress_bar69"></wm-progress-bar>
+                                                <wm-progress-bar datavalue="100" class="pr-ws-hs progress-bar-success" name="progress_bar70"></wm-progress-bar>
+                                                <wm-progress-bar datavalue="100" class="pr-ws-hs progress-bar-success" name="progress_bar71"></wm-progress-bar>
+                                                <wm-progress-bar datavalue="100" class="pr-ws-hs progress-bar-success" name="progress_bar72"></wm-progress-bar>
+                                                <wm-progress-bar datavalue="100" class="pr-ws-hs progress-bar-success" name="progress_bar73"></wm-progress-bar>
+                                                <wm-progress-bar datavalue="100" class="pr-ws-hs progress-bar-success" name="progress_bar74"></wm-progress-bar>
+                                                <wm-progress-bar datavalue="0" class="pr-ws-hs" name="progress_bar75"></wm-progress-bar>
+                                                <wm-progress-bar datavalue="0" class="pr-ws-hs" name="progress_bar76"></wm-progress-bar>
+                                            </wm-container>
+                                        </wm-container>
+                                    </wm-gridcolumn>
+                                </wm-gridrow>
+                            </wm-layoutgrid>
+                        </wm-container>
+                        <wm-container padding="2.5em unset unset unset" class="border-top" name="container13">
+                            <wm-layoutgrid name="layoutgrid11">
+                                <wm-gridrow name="gridrow31">
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn58" padding="unset unset 12px unset">
+                                        <wm-label padding="unset" caption="DEBT-TO-INCOME DATA" name="label59" class="font-small font-semibold"></wm-label>
+                                    </wm-gridcolumn>
+                                </wm-gridrow>
+                                <wm-gridrow name="gridrow32" padding="12px unset">
+                                    <wm-gridcolumn columnwidth="4" name="gridcolumn72"></wm-gridcolumn>
+                                    <wm-gridcolumn columnwidth="8" name="gridcolumn59" horizontalalign="right">
+                                        <wm-container name="container16" class="flex-inline v-center">
+                                            <wm-label padding="unset 5px unset unset" caption="Total Monthly Income" class="text-muted" name="label72"></wm-label>
+                                            <wm-label padding="unset" caption=" $15,833.33" class="font-small font-medium" name="label73"></wm-label>
+                                        </wm-container>
+                                    </wm-gridcolumn>
+                                </wm-gridrow>
+                                <wm-gridrow name="gridrow33">
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn60" padding="8px unset unset unset">
+                                        <wm-container name="container20" class="p flex-inline v-center">
+                                            <wm-progress-bar datavalue="100" name="progress_bar17" height="50px" width="22px" class="progress-bar-success"></wm-progress-bar>
+                                            <wm-progress-bar datavalue="100" name="progress_bar18" height="50px" width="29px" class="progress-bar-info"></wm-progress-bar>
+                                            <wm-progress-bar datavalue="100" name="progress_bar19" height="50px" width="46px"></wm-progress-bar>
+                                            <wm-progress-bar name="progress_bar20" height="50px"></wm-progress-bar>
+                                            <wm-progress-bar class="p" name="progress_bar21" height="50px"></wm-progress-bar>
+                                        </wm-container>
+                                    </wm-gridcolumn>
+                                </wm-gridrow>
+                                <wm-gridrow name="gridrow41" padding="unset unset 2em unset">
+                                    <wm-gridcolumn columnwidth="5" name="gridcolumn76"></wm-gridcolumn>
+                                    <wm-gridcolumn columnwidth="3" name="gridcolumn73">
+                                        <wm-container name="container19" class="flex-inline v-center">
+                                            <wm-icon name="icon13" iconclass="lc-bullet bullet-colors bullet-secondary"></wm-icon>
+                                            <wm-label padding="unset unset unset 8px" name="label74" caption="Credit Card" margin="unset unset 0px unset" class="text-muted font-xxsmall"></wm-label>
+                                        </wm-container>
+                                    </wm-gridcolumn>
+                                    <wm-gridcolumn columnwidth="2" name="gridcolumn74" horizontalalign="right">
+                                        <wm-container name="container18" class="flex-inline v-center">
+                                            <wm-icon name="icon14" iconclass="lc-bullet bullet-colors bullet-primary"></wm-icon>
+                                            <wm-label padding="unset unset unset 8px" name="label76" caption="Auto" margin="unset unset 0px unset" class="text-muted font-xxsmall"></wm-label>
+                                        </wm-container>
+                                    </wm-gridcolumn>
+                                    <wm-gridcolumn columnwidth="2" name="gridcolumn75" horizontalalign="right">
+                                        <wm-container name="container17" class="flex-inline v-center">
+                                            <wm-icon name="icon15" iconclass="lc-bullet bullet-colors bullet-success"></wm-icon>
+                                            <wm-label padding="unset unset unset 8px" name="label77" caption="Home" margin="unset unset 0px unset" class="text-muted font-xxsmall"></wm-label>
+                                        </wm-container>
+                                    </wm-gridcolumn>
+                                </wm-gridrow>
+                                <wm-gridrow name="gridrow34" padding="unset unset 2em unset">
+                                    <wm-gridcolumn columnwidth="4" name="gridcolumn61" padding="unset 10px unset unset">
+                                        <wm-container name="container29" class="border-right" padding="unset 10px unset unset">
+                                            <wm-label padding="unset 5px unset unset" caption="bind:'<span class= &quot;label-muted-1&quot;> Debt to home </span>' + '<span class= &quot;font-medium&quot;> % </sapn>'" name="label60_1"></wm-label>
+                                            <wm-label padding="unset" caption="39%" class="font-h2 p font-semibold" name="label61_1"></wm-label>
+                                        </wm-container>
+                                    </wm-gridcolumn>
+                                    <wm-gridcolumn columnwidth="8" name="gridcolumn62" padding="unset unset unset 10px">
+                                        <wm-label padding="unset" caption="Overall Debt-to-income Health" class="p label-muted-1" name="label63"></wm-label>
+                                        <wm-container name="container19_2" class="flex-inline v-center">
+                                            <wm-progress-bar datavalue="100" name="progress_bar9" class="pr-w1-h1 progress-bar-success" margin="unset 10px unset unset"></wm-progress-bar>
+                                            <wm-progress-bar datavalue="100" name="progress_bar10_1" class="pr-w1-h1 progress-bar-success" margin="unset 10px unset unset"></wm-progress-bar>
+                                            <wm-progress-bar datavalue="100" name="progress_bar13" class="pr-w1-h1 progress-bar-success" margin="unset 10px unset unset"></wm-progress-bar>
+                                            <wm-progress-bar datavalue="100" name="progress_bar11" class="pr-w1-h1 progress-bar-success" margin="unset 10px unset unset"></wm-progress-bar>
+                                            <wm-progress-bar datavalue="100" name="progress_bar12" class="pr-w1-h1 progress-bar-success" margin="unset 10px unset unset"></wm-progress-bar>
+                                            <wm-progress-bar name="progress_bar14" class="pr-w1-h1 " margin="unset 10px unset unset"></wm-progress-bar>
+                                            <wm-progress-bar name="progress_bar15" margin="unset 10px unset unset" class="pr-w1-h1 "></wm-progress-bar>
+                                            <wm-progress-bar name="progress_bar16" margin="unset 10px unset unset" class="pr-w1-h1 "></wm-progress-bar>
+                                            <wm-progress-bar name="progress_bar17_1" margin="unset 10px unset unset" class="pr-w1-h1 "></wm-progress-bar>
+                                            <wm-progress-bar name="progress_bar18_1" class="pr-w1-h1 " margin="unset 10px unset unset"></wm-progress-bar>
+                                        </wm-container>
+                                        <wm-label padding="unset" name="label56_2" caption="05/10" class="font-h2 font-semibold" margin="unset unset unset 10px"></wm-label>
+                                    </wm-gridcolumn>
+                                </wm-gridrow>
+                                <wm-gridrow name="gridrow35">
+                                    <wm-gridcolumn columnwidth="6" name="gridcolumn63"></wm-gridcolumn>
+                                    <wm-gridcolumn columnwidth="6" name="gridcolumn64"></wm-gridcolumn>
+                                </wm-gridrow>
+                                <wm-gridrow name="gridrow36">
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn65"></wm-gridcolumn>
+                                </wm-gridrow>
+                                <wm-gridrow name="gridrow37">
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn66">
+                                        <wm-container name="container27_1" margin="unset unset 4em unset">
+                                            <wm-list listclass="list-group" itemclass="switch-boxshadow list-group-item border-none list-bg" template="true" template-name="Contact List" itemsperrow="xs-1 sm-1 md-1 lg-1" class="media-list" datafield="All Fields" statehandler="URL" dataset="bind:Variables.mdTestListData.dataSet"
+                                                navigation="Basic" name="list3">
+                                                <wm-listtemplate layout="inline" name="listtemplate3">
+                                                    <wm-container class="media-body " padding="5px" name="container28_1">
+                                                        <wm-layoutgrid name="layoutgrid12">
+                                                            <wm-gridrow name="gridrow34_2">
+                                                                <wm-gridcolumn columnwidth="6" name="gridcolumn56">
+                                                                    <wm-icon iconclass="bind:Variables.mdTestListData.dataSet[$i].icon" name="icon10" caption="" class="gradient-list-icons fa-lg"></wm-icon>
+                                                                    <wm-label padding="unset unset unset 7px" caption="bind:Variables.mdTestListData.dataSet[$i].LoaName" class="font-xxsmall font-semibold " name="label57" margin="unset unset 0px unset"></wm-label>
+                                                                </wm-gridcolumn>
+                                                                <wm-gridcolumn columnwidth="6" horizontalalign="right" name="gridcolumn57_1">
+                                                                    <wm-label padding="unset" caption="bind:Variables.mdTestListData.dataSet[$i].LoanValue" class="font-xxsmall font-semibold" name="label58" margin="unset unset 0px unset"></wm-label>
+                                                                </wm-gridcolumn>
+                                                            </wm-gridrow>
+                                                            <wm-gridrow name="gridrow35_2">
+                                                                <wm-gridcolumn columnwidth="12" name="gridcolumn58_1">
+                                                                    <wm-progress-bar datavalue="30" dataset="bind:Variables.mdTestListData.dataSet[$i].LoanValue" class="radius-base" name="progress_bar47_1"></wm-progress-bar>
+                                                                </wm-gridcolumn>
+                                                            </wm-gridrow>
+                                                            <wm-gridrow name="gridrow36_2">
+                                                                <wm-gridcolumn columnwidth="6" name="gridcolumn59_2">
+                                                                    <wm-label padding="unset 4px unset unset" caption="bind:Variables.mdTestListData.dataSet[$i].CityAvg" class="font-xxsmall font-semibold" name="label59_3" margin="unset unset 0px unset"></wm-label>
+                                                                    <wm-icon iconclass="lc-dropdown dropdown-secondary" name="icon11"></wm-icon>
+                                                                    <wm-label padding="unset" class="text-muted font-xxsmall p" caption="than city avg" name="label60_2"></wm-label>
+                                                                </wm-gridcolumn>
+                                                                <wm-gridcolumn columnwidth="6" horizontalalign="right" name="gridcolumn60_3">
+                                                                    <wm-label padding="unset 4px unset unset" caption="bind:Variables.mdTestListData.dataSet[$i].NationalAvg" class="font-xxsmall font-semibold" name="label61_2" margin="unset unset 0px unset"></wm-label>
+                                                                    <wm-icon iconclass="lc-dropdown dropdown-secondary" name="icon12"></wm-icon>
+                                                                    <wm-label padding="unset" class="text-muted font-xxsmall p" caption="than national avg" name="label62_1"></wm-label>
+                                                                </wm-gridcolumn>
+                                                            </wm-gridrow>
+                                                        </wm-layoutgrid>
+                                                    </wm-container>
+                                                </wm-listtemplate>
+                                            </wm-list>
+                                        </wm-container>
+                                    </wm-gridcolumn>
+                                </wm-gridrow>
+                            </wm-layoutgrid>
+                        </wm-container>
+                    </wm-gridcolumn>
+                    <wm-gridcolumn columnwidth="6" name="gridcolumn31_1" padding="unset 1em">
+                        <wm-buttongroup name="buttongroup1" padding="unset unset 3em unset" class="secondary">
+                            <wm-button class="btn-default btn" type="button" caption="Select alternate Offer" name="button1" margin="2px" on-click="Widgets.revised_offers_dialog.open()"></wm-button>
+                            <wm-button class="btn-default btn" type="button" caption="Reject" name="Reject_Button" margin="2px" on-click="Widgets.successDialog2.open();Reject_ButtonClick($event, widget)"></wm-button>
+                            <wm-button class="btn-default btn" type="button" caption="Approve" name="Approve_button" margin="2px" on-click="Widgets.approve_dialog.open();Approve_buttonClick($event, widget)"></wm-button>
+                        </wm-buttongroup>
+                        <wm-layoutgrid name="layoutgrid10">
+                            <wm-gridrow name="gridrow24_1">
+                                <wm-gridcolumn columnwidth="12" name="gridcolumn43_1" class="list-bg radius-base" padding="2em">
+                                    <wm-label padding="unset" caption="EXTRACTED DOCUMENT INFORMATION" fontweight="bold" class="h3 font-semibold" name="label47_2" margin="unset unset 12px unset"></wm-label>
+                                    <wm-buttongroup name="buttongroup4_1" padding="12px unset 24px unset">
+                                        <wm-button class="btn-default selected" type="button" caption="Driver's License" name="licenseButton" on-click="licenseButtonClick($event, widget)"></wm-button>
+                                        <wm-button class="btn-default" type="button" caption="W2 Form" name="w2FormButtom" on-click="w2FormButtomClick($event, widget)"></wm-button>
+                                    </wm-buttongroup>
+                                    <wm-container content="detailsPartial" name="container9_2">
+                                        <wm-param name="heading" value="pd" type="string"></wm-param>
+                                        <wm-param name="details" value="bind:getDlData(Variables.sv_Get_Loan_Details_by_Id.dataSet.document[0].docExtractData)" type="string"></wm-param>
+                                    </wm-container>
+                                    <wm-container content="detailsPartial" name="container10_2" show="false"></wm-container>
+                                    <wm-container name="container8_1" class="border-top" padding="3.5em unset 1.6em unset">
+                                        <wm-layoutgrid name="layoutgrid10_1">
+                                            <wm-gridrow name="gridrow24">
+                                                <wm-gridcolumn columnwidth="6" name="gridcolumn41_1" padding="unset 10px unset unset">
+                                                    <wm-container name="container15_1" class="bg-white" padding="0px">
+                                                        <wm-container name="container28_2" class="flex v-center ">
+                                                            <wm-layoutgrid name="layoutgrid13">
+                                                                <wm-gridrow name="gridrow39" padding="10px">
+                                                                    <wm-gridcolumn columnwidth="6" name="gridcolumn66_1">
+                                                                        <wm-container name="container29_2" class="gradient-green-anchor-bg">
+                                                                            <wm-anchor margin="unset 0.5em" name="anchor5" caption="E-Signed" iconclass="lc-check " class="gradient-green-anchor "></wm-anchor>
+                                                                        </wm-container>
+                                                                    </wm-gridcolumn>
+                                                                    <wm-gridcolumn columnwidth="6" name="gridcolumn68_1"></wm-gridcolumn>
+                                                                </wm-gridrow>
+                                                                <wm-gridrow name="gridrow37_1">
+                                                                    <wm-gridcolumn columnwidth="4" name="gridcolumn62_3">
+                                                                        <wm-icon name="icon10_1" class="pdf-red" iconclass="lc-pdf"></wm-icon>
+                                                                    </wm-gridcolumn>
+                                                                    <wm-gridcolumn columnwidth="8" name="gridcolumn63_1">
+                                                                        <wm-label padding="unset" name="label60_3" caption="Driver’s License" class="p"></wm-label>
+                                                                        <wm-label padding="unset" name="label61_3" caption="34.3 kb" class="text-muted p"></wm-label>
+                                                                    </wm-gridcolumn>
+                                                                </wm-gridrow>
+                                                            </wm-layoutgrid>
+                                                        </wm-container>
+                                                    </wm-container>
+                                                    <wm-prefab prefabname="BoxView" name="BoxView2" class="app-prefab prfb-cls" url="https://auction-app-wm-ps.s3.amazonaws.com/photos/Californian_sample_driver's_license (1).pdf" show="true"></wm-prefab>
+                                                </wm-gridcolumn>
+                                                <wm-gridcolumn columnwidth="6" name="gridcolumn42_1" padding="unset unset unset 10px">
+                                                    <wm-container name="container16_1" class="bg-white" padding="0px">
+                                                        <wm-layoutgrid name="layoutgrid14">
+                                                            <wm-gridrow name="gridrow40" padding="10px">
+                                                                <wm-gridcolumn columnwidth="6" name="gridcolumn68">
+                                                                    <wm-container name="container30" class="gradient-green-anchor-bg">
+                                                                        <wm-anchor margin="unset 0.5em" name="anchor3" caption="E-Signed" iconclass="lc-check" class="gradient-green-anchor "></wm-anchor>
+                                                                    </wm-container>
+                                                                </wm-gridcolumn>
+                                                                <wm-gridcolumn columnwidth="6" name="gridcolumn69"></wm-gridcolumn>
+                                                            </wm-gridrow>
+                                                            <wm-gridrow name="gridrow41_1">
+                                                                <wm-gridcolumn columnwidth="4" name="gridcolumn70">
+                                                                    <wm-icon class="pdf-red" iconclass="lc-pdf" name="icon11_1"></wm-icon>
+                                                                </wm-gridcolumn>
+                                                                <wm-gridcolumn columnwidth="8" name="gridcolumn71">
+                                                                    <wm-label padding="unset" caption="W2 Form" class="p" name="label62_2"></wm-label>
+                                                                    <wm-label padding="unset" name="label63_2" caption="50.3 kb" class="text-muted p"></wm-label>
+                                                                </wm-gridcolumn>
+                                                            </wm-gridrow>
+                                                        </wm-layoutgrid>
+                                                    </wm-container>
+                                                    <wm-prefab prefabname="BoxView" name="BoxView3" class="app-prefab prfb-cls " url="https://auction-app-wm-ps.s3.amazonaws.com/photos/w2sample3 (1).pdf"></wm-prefab>
+                                                </wm-gridcolumn>
+                                            </wm-gridrow>
+                                        </wm-layoutgrid>
+                                    </wm-container>
+                                </wm-gridcolumn>
+                            </wm-gridrow>
+                        </wm-layoutgrid>
+                    </wm-gridcolumn>
+                </wm-gridrow>
+            </wm-layoutgrid>
+        </wm-page-content>
+    </wm-content>
+    <wm-footer content="footer" name="footer1"></wm-footer>
+    <wm-dialog dialogtype="design-dialog" modal="true" title="" iconclass="" name="revised_offers_dialog" class="modal-xlg">
+        <wm-layoutgrid name="layoutgrid11_1">
+            <wm-gridrow name="gridrow27_1">
+                <wm-gridcolumn columnwidth="12" name="gridcolumn51_1" padding="unset unset 3% unset">
+                    <wm-label padding="unset" name="label58_2" caption="Select Alternate Offers" class="font-semibold h2" margin="0px unset 5px unset"></wm-label>
+                    <wm-label padding="unset" name="label54_1" caption="The following offers are available for David Bollinger. Select any one to proceed." class="text-muted font-h4"></wm-label>
+                </wm-gridcolumn>
+            </wm-gridrow>
+            <wm-gridrow name="gridrow30_2">
+                <wm-gridcolumn columnwidth="12" name="gridcolumn54" horizontalalign="left">
+                    <wm-label padding="4px 10px" name="label59_5" caption="Recommended" class="radius-large bg-green-gradiant" margin="unset unset 1em 7em"></wm-label>
+                </wm-gridcolumn>
+            </wm-gridrow>
+            <wm-gridrow name="gridrow28_1">
+                <wm-gridcolumn columnwidth="12" name="gridcolumn53">
+                    <wm-list listclass="list-group" itemsperrow="xs-2 sm-2 md-6 lg-6" template="true" template-name="Contact Card" class="list-card  app-livelist check-list" statehandler="URL" name="mdAlternateLoanOffersList2" dataset="bind:Variables.mdAlternateLoanOffers.dataSet"
+                        navigation="None" selectfirstitem="true" itemclass="col-5">
+                        <wm-listtemplate layout="media" name="listtemplate4">
+                            <wm-card name="ContactCard">
+                                <wm-card-content horizontalalign="center" name="card_content3" showindevice="all">
+                                    <wm-container name="container29_1" horizontalalign="left">
+                                        <wm-label padding="unset" name="label59_4" class="offer-label font-semibold font-h4" caption="bind:Variables.mdAlternateLoanOffers.dataSet[$i].offer"></wm-label>
+                                    </wm-container>
+                                    <wm-layoutgrid name="layoutgrid13_1" class="condensed text-left">
+                                        <wm-gridrow name="gridrow31_1">
+                                            <wm-gridcolumn columnwidth="12" name="gridcolumn55">
+                                                <wm-label padding="unset" caption="Amount" class="p font-xxsmall font-medium" name="label57_1"></wm-label>
+                                                <wm-label padding="unset" caption="bind:Variables.mdAlternateLoanOffers.dataSet[$i].Amount" class="p font-h4 font-semibold" name="label58_1"></wm-label>
+                                            </wm-gridcolumn>
+                                        </wm-gridrow>
+                                        <wm-gridrow name="gridrow33_1">
+                                            <wm-gridcolumn columnwidth="12" name="gridcolumn59_1">
+                                                <wm-label padding="unset" caption="Tenure" class="p font-xxsmall font-medium" name="label59_1"></wm-label>
+                                                <wm-label padding="unset" caption="5 Years" class="p font-h4 font-semibold" name="label60"></wm-label>
+                                                <wm-label padding="unset" caption="bind:Variables.mdAlternateLoanOffers.dataSet[$i].Tenure" class="h6" name="label61"></wm-label>
+                                            </wm-gridcolumn>
+                                        </wm-gridrow>
+                                        <wm-gridrow name="gridrow34_1">
+                                            <wm-gridcolumn columnwidth="12" name="gridcolumn60_1">
+                                                <wm-label padding="unset" caption="Interest Rate P.A" class="font-xxsmall font-medium" name="label62"></wm-label>
+                                                <wm-label padding="unset" caption="bind:Variables.mdAlternateLoanOffers.dataSet[$i].InterestRatePa" class="p font-h4 font-semibold" name="label63_1"></wm-label>
+                                            </wm-gridcolumn>
+                                        </wm-gridrow>
+                                        <wm-gridrow name="gridrow35_1">
+                                            <wm-gridcolumn columnwidth="12" name="gridcolumn61_1">
+                                                <wm-label padding="unset" caption="Loan EMI - Monthly" class="font-xxsmall font-medium" name="label64"></wm-label>
+                                                <wm-label padding="unset" caption="bind:Variables.mdAlternateLoanOffers.dataSet[$i].LoanEmiMnthly" class="p font-h4 font-semibold" name="label65"></wm-label>
+                                            </wm-gridcolumn>
+                                        </wm-gridrow>
+                                        <wm-gridrow name="gridrow36_1">
+                                            <wm-gridcolumn columnwidth="12" name="gridcolumn62_1"></wm-gridcolumn>
+                                        </wm-gridrow>
+                                        <wm-gridrow name="gridrow32_1">
+                                            <wm-gridcolumn columnwidth="12" name="gridcolumn57"></wm-gridcolumn>
+                                        </wm-gridrow>
+                                    </wm-layoutgrid>
+                                </wm-card-content>
+                                <wm-card-footer horizontalalign="center" name="card_footer3">
+                                    <wm-label padding="unset" caption="PROBABILITY OF DEFAULT" class="text-left p font-medium" name="label66_1"></wm-label>
+                                    <wm-composite name="composite3" class="text-left">
+                                        <wm-container class="col-xs-8 flex-inline v-center" name="container18_1">
+                                            <wm-progress-bar datavalue="100" name="progress_bar47_2" class="pr-w1-h1 progress-bar-success" margin="unset 5px unset unset"></wm-progress-bar>
+                                            <wm-progress-bar datavalue="100" name="progress_bar48" class="pr-w1-h1 progress-bar-success" margin="unset 5px unset unset"></wm-progress-bar>
+                                            <wm-progress-bar datavalue="100" name="progress_bar49" margin="unset 5px unset unset" class="pr-w1-h1 progress-bar-success"></wm-progress-bar>
+                                            <wm-progress-bar datavalue="100" name="progress_bar50" margin="unset 5px unset unset" class="pr-w1-h1 progress-bar-success"></wm-progress-bar>
+                                            <wm-progress-bar datavalue="100" name="progress_bar51" margin="unset 5px unset unset" class="pr-w1-h1 progress-bar-success"></wm-progress-bar>
+                                            <wm-progress-bar name="progress_bar52_1" class="pr-w1-h1" margin="unset 5px unset unset"></wm-progress-bar>
+                                            <wm-progress-bar name="progress_bar54" class="pr-w1-h1" margin="unset 5px unset unset"></wm-progress-bar>
+                                            <wm-progress-bar name="progress_bar53" class="pr-w1-h1" margin="unset 5px unset unset"></wm-progress-bar>
+                                            <wm-progress-bar name="progress_bar55" class="pr-w1-h1" margin="unset 5px unset unset"></wm-progress-bar>
+                                            <wm-progress-bar name="progress_bar56_1" class="pr-w1-h1" margin="unset 5px unset unset"></wm-progress-bar>
+                                        </wm-container>
+                                        <wm-label padding="unset" caption="bind:Variables.mdAlternateLoanOffers.dataSet[$i].Probability + &quot;/10&quot;" class="col-xs-4 font-h2  font-medium" name="label55_1"></wm-label>
+                                    </wm-composite>
+                                </wm-card-footer>
+                            </wm-card>
+                        </wm-listtemplate>
+                    </wm-list>
+                </wm-gridcolumn>
+            </wm-gridrow>
+        </wm-layoutgrid>
+        <wm-dialogactions name="dialogactions1" class="modal-footer">
+            <wm-button class="btn-default" caption="Close" on-click="closeDialog()" name="button8"></wm-button>
+            <wm-button class="btn-secondary" caption="Offer Alternate Amount" type="button" margin="unset unset unset 12px" name="button9" on-click="Widgets.revised_offers_dialog.close();Widgets.succesDialog.open()"></wm-button>
+        </wm-dialogactions>
+    </wm-dialog>
+    <wm-dialog dialogtype="design-dialog" modal="true" title="" iconclass="lc-check icon-check" name="approve_dialog" iconwidth="50px" iconheight="50px">
+        <wm-layoutgrid name="layoutgrid7">
+            <wm-gridrow name="gridrow15">
+                <wm-gridcolumn columnwidth="12" name="gridcolumn26" horizontalalign="center">
+                    <wm-label padding="unset" name="label38_1" caption="Loan Approved" fontweight="bold" class="h2 font-semibold" margin="0px unset 5px unset"></wm-label>
+                </wm-gridcolumn>
+            </wm-gridrow>
+            <wm-gridrow name="gridrow16">
+                <wm-gridcolumn columnwidth="12" name="gridcolumn28" horizontalalign="center" padding="unset unset 2.5em unset">
+                    <wm-label padding="unset" name="label39_1" caption="Officer has been approved for the following loan -" class="text-muted font-h4"></wm-label>
+                </wm-gridcolumn>
+            </wm-gridrow>
+        </wm-layoutgrid>
+        <wm-container name="container17_1">
+            <wm-layoutgrid name="layoutgrid6">
+                <wm-gridrow name="gridrow13" padding="unset unset 2em unset">
+                    <wm-gridcolumn columnwidth="4" name="gridcolumn22">
+                        <wm-label padding="unset 0.5em" caption="Amount" name="label34_3" class="text-muted p"></wm-label>
+                        <wm-label padding="unset 0.5em" caption="bind:Variables.sv_Get_Loan_Details_by_Id.dataSet.loanDetails.amount.toLocaleString(&quot;en-US&quot;) | prefix: '$'" class="p font-h3 font-semibold" name="label40"></wm-label>
+                    </wm-gridcolumn>
+                    <wm-gridcolumn columnwidth="4" name="gridcolumn30">
+                        <wm-label padding="unset 0.5em" caption="Tenure" class="text-muted p" name="label41"></wm-label>
+                        <wm-label padding="unset 0.5em" caption="bind:Variables.sv_Get_Loan_Details_by_Id.dataSet.loanDetails.tenure | suffix: ' Years'" class="p font-h3 font-semibold" name="label42"></wm-label>
+                    </wm-gridcolumn>
+                    <wm-gridcolumn columnwidth="4" name="gridcolumn23">
+                        <wm-label padding="unset 0.5em" caption="Interest Rate P A" class="text-muted p" name="label43"></wm-label>
+                        <wm-label padding="unset 0.5em" caption="bind:Variables.sv_Get_Loan_Details_by_Id.dataSet.loanDetails.interestRate | suffix: '%'" class="p font-h3 font-semibold" name="label44"></wm-label>
+                    </wm-gridcolumn>
+                </wm-gridrow>
+                <wm-gridrow name="gridrow14">
+                    <wm-gridcolumn columnwidth="4" name="gridcolumn24" horizontalalign="left">
+                        <wm-label padding="unset 0.5em" caption="Interest Amount " class="text-muted p" name="label45"></wm-label>
+                        <wm-label padding="unset 0.5em" caption="bind:Variables.sv_Get_Loan_Details_by_Id.dataSet.loanDetails.interestAmt.toLocaleString(&quot;en-US&quot;) | prefix: '$'" class="p font-h3 font-semibold" name="label46"></wm-label>
+                    </wm-gridcolumn>
+                    <wm-gridcolumn columnwidth="4" name="gridcolumn31">
+                        <wm-label padding="unset 0.5em" caption="Loan EMI - Monthly" class="text-muted p" name="label47"></wm-label>
+                        <wm-label padding="unset 0.5em" caption="bind:(Variables.sv_Get_Loan_Details_by_Id.dataSet.loanDetails.emiFreq).toLocaleString(&quot;en-US&quot;) | prefix: '$'" class="p font-h3 font-semibold" name="label48"></wm-label>
+                    </wm-gridcolumn>
+                    <wm-gridcolumn columnwidth="4" name="gridcolumn25">
+                        <wm-label padding="unset 0.5em" caption="Total Payment" class="text-muted p" name="label49"></wm-label>
+                        <wm-label padding="unset 0.5em" caption="bind:(Variables.sv_Get_Loan_Details_by_Id.dataSet.loanDetails.amount + Variables.sv_Get_Loan_Details_by_Id.dataSet.loanDetails.interestAmt).toLocaleString(&quot;en-US&quot;) | prefix: '$'" class="p font-h3 font-semibold"
+                            name="label50"></wm-label>
+                    </wm-gridcolumn>
+                </wm-gridrow>
+            </wm-layoutgrid>
+        </wm-container>
+        <wm-layoutgrid name="layoutgrid10_2">
+            <wm-gridrow name="gridrow26_1" padding="3em unset unset unset">
+                <wm-gridcolumn columnwidth="6" name="gridcolumn49_1"></wm-gridcolumn>
+                <wm-gridcolumn columnwidth="6" name="gridcolumn50_1" horizontalalign="right">
+                    <wm-button class="btn-secondary" caption="Fininsh" on-click="closeDialog();Actions.goToPage_PendingLoans.invoke();button10Click($event, widget)" name="button10"></wm-button>
+                </wm-gridcolumn>
+            </wm-gridrow>
+        </wm-layoutgrid>
+        <wm-dialogactions name="dialogactions2"></wm-dialogactions>
+    </wm-dialog>
+    <wm-dialog dialogtype="design-dialog" modal="true" title="" iconclass="lc-check icon-check" name="succesDialog" iconwidth="50px" iconheight="50px" class="modal-sm">
+        <wm-layoutgrid name="layoutgrid12_1">
+            <wm-gridrow name="gridrow34_3" padding="unset unset 2em unset">
+                <wm-gridcolumn columnwidth="1" name="gridcolumn56_2"></wm-gridcolumn>
+                <wm-gridcolumn columnwidth="10" name="gridcolumn57_2" horizontalalign="center">
+                    <wm-label padding="unset" name="label57_4" caption="Customer will be notified with the Email / Phone with the alternate offer" class="font-semibold font-h4"></wm-label>
+                </wm-gridcolumn>
+                <wm-gridcolumn columnwidth="1" name="gridcolumn60_4"></wm-gridcolumn>
+            </wm-gridrow>
+            <wm-gridrow name="gridrow36_3">
+                <wm-gridcolumn columnwidth="6" name="gridcolumn61_2"></wm-gridcolumn>
+                <wm-gridcolumn columnwidth="6" name="gridcolumn62_2"></wm-gridcolumn>
+            </wm-gridrow>
+            <wm-gridrow name="gridrow35_3">
+                <wm-gridcolumn columnwidth="6" name="gridcolumn58_2"></wm-gridcolumn>
+                <wm-gridcolumn columnwidth="6" name="gridcolumn59_3" horizontalalign="right">
+                    <wm-button class="btn-secondary" caption="Close" on-click="closeDialog();Actions.goToPage_PendingLoans.invoke()" name="button11_1"></wm-button>
+                </wm-gridcolumn>
+            </wm-gridrow>
+        </wm-layoutgrid>
+    </wm-dialog>
+    <wm-dialog dialogtype="design-dialog" modal="true" title="" iconclass="wi wi-clear icon-clear" name="successDialog2" closable="false">
+        <wm-layoutgrid name="layoutgrid16">
+            <wm-gridrow padding="unset unset 2em unset" name="gridrow43">
+                <wm-gridcolumn columnwidth="1" name="gridcolumn74_1"></wm-gridcolumn>
+                <wm-gridcolumn columnwidth="10" horizontalalign="center" name="gridcolumn75_1">
+                    <wm-label padding="unset" caption="Customer will be notified with Email / Phone about  rejection of his loan application." class="font-semibold font-h4" name="label64_1"></wm-label>
+                </wm-gridcolumn>
+                <wm-gridcolumn columnwidth="1" name="gridcolumn76_1"></wm-gridcolumn>
+            </wm-gridrow>
+            <wm-gridrow name="gridrow44">
+                <wm-gridcolumn columnwidth="6" name="gridcolumn77"></wm-gridcolumn>
+                <wm-gridcolumn columnwidth="6" name="gridcolumn78"></wm-gridcolumn>
+            </wm-gridrow>
+            <wm-gridrow name="gridrow45">
+                <wm-gridcolumn columnwidth="6" name="gridcolumn79"></wm-gridcolumn>
+                <wm-gridcolumn columnwidth="6" horizontalalign="right" name="gridcolumn80">
+                    <wm-button class="btn-secondary" caption="Close" on-click="closeDialog();Actions.goToPage_PendingLoans.invoke();button13Click($event, widget)" name="button13"></wm-button>
+                </wm-gridcolumn>
+            </wm-gridrow>
+        </wm-layoutgrid>
+    </wm-dialog>
+</wm-page>

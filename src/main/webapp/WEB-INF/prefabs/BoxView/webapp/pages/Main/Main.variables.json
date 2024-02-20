@@ -1,0 +1,41 @@
+{
+  "GetURL" : {
+    "_id" : "wm-GetURL-wm.ServiceVariable-1542781936928",
+    "name" : "GetURL",
+    "owner" : "Page",
+    "category" : "wm.ServiceVariable",
+    "dataBinding" : [ {
+      "target" : "fileId",
+      "value" : "bind:url",
+      "type" : "string"
+    } ],
+    "type" : "string",
+    "service" : "BoxService",
+    "operation" : "getEmbedURL",
+    "operationId" : "BoxController_getEmbedURL",
+    "operationType" : "get",
+    "serviceType" : "JavaService",
+    "dataSet" : [ ],
+    "isList" : false,
+    "maxResults" : 20,
+    "startUpdate" : false,
+    "autoUpdate" : false,
+    "inFlightBehavior" : "executeLast",
+    "transformationRequired" : false,
+    "saveInPhonegap" : false,
+    "controller" : "Box"
+  },
+  "supportedLocale" : {
+    "_id" : "wm-wm.Variable1402640443182",
+    "name" : "supportedLocale",
+    "owner" : "Page",
+    "category" : "wm.Variable",
+    "dataSet" : {
+      "en" : "English"
+    },
+    "type" : "string",
+    "isList" : false,
+    "saveInPhonegap" : false,
+    "twoWayBinding" : false
+  }
+}

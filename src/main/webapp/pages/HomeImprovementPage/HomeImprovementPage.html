@@ -1,0 +1,380 @@
+<wm-page pagetitle="Home Improvement Page" name="page1">
+    <wm-header content="logo_header" name="header1"></wm-header>
+    <wm-content name="content1">
+        <wm-page-content columnwidth="12" name="page_content1" padding="0px">
+            <wm-wizard stepstyle="justified" class="number vertical " name="wizard1" cancelable="true" previousbtnlabel="Previous" on-done="Widgets.userValidationDialog.open();wizard1Done(widget, steps)" on-cancel="wizard1Cancel(widget, steps)" cancelbtnlabel="Save as Draft">
+                <wm-wizardstep name="wizardstep1" iconclass="" title="Personal Details" enableskip="false" show="true" on-next="wizardstep1Next(widget, currentStep, stepIndex)">
+                    <!-- <wm-label padding="unset" name="label8" class="h2" caption="First, Lets begin with some of your basic informaiton"></wm-label><wm-layoutgrid name="layoutgrid2"><wm-gridrow name="gridrow3"><wm-gridcolumn columnwidth="6" name="gridcolumn5"><wm-composite name="composite2"><wm-label class="col-md-3 control-label p" name="label9" caption="First Name"></wm-label><wm-container class="col-md-9" name="container2"><wm-text name="firstName" datavalue="bind:Variables.md_createLoanApplication.dataSet.customerDetails.fname"></wm-text></wm-container></wm-composite></wm-gridcolumn><wm-gridcolumn columnwidth="6" name="gridcolumn6"><wm-composite name="composite3"><wm-label class="col-md-3 control-label p" name="label10" caption="Last Name"></wm-label><wm-container class="col-md-9" name="container3"><wm-text name="lastName" datavalue="bind:Variables.md_createLoanApplication.dataSet.customerDetails.lname" on-change="text3Change($event, widget, newVal, oldVal)"></wm-text></wm-container></wm-composite></wm-gridcolumn></wm-gridrow><wm-gridrow name="gridrow4"><wm-gridcolumn columnwidth="6" name="gridcolumn7"><wm-composite name="composite4"><wm-label class="col-md-3 control-label p" name="label11" caption="D.O.B"></wm-label><wm-container class="col-md-9" name="container4"><wm-date name="dateOfBirth"></wm-date></wm-container></wm-composite></wm-gridcolumn><wm-gridcolumn columnwidth="6" name="gridcolumn8"><wm-composite name="composite5"><wm-label class="col-md-3 control-label p" name="label12" caption="Social Security Number"></wm-label><wm-container class="col-md-9" name="container5"><wm-number textalign="right" name="ssnNumber"></wm-number></wm-container></wm-composite></wm-gridcolumn></wm-gridrow><wm-gridrow name="gridrow5"><wm-gridcolumn columnwidth="6" name="gridcolumn9"><wm-composite name="composite6"><wm-label class="col-md-3 control-label p" name="label13" caption="Email Address"></wm-label><wm-container class="col-md-9" name="container6"><wm-text name="email"></wm-text></wm-container></wm-composite></wm-gridcolumn><wm-gridcolumn columnwidth="6" name="gridcolumn10"><wm-composite name="composite7"><wm-label class="col-md-3 control-label p" name="label14" caption="Mobile Number"></wm-label><wm-container class="col-md-9" name="container7"><wm-number textalign="right" name="mobileNumber"></wm-number></wm-container></wm-composite></wm-gridcolumn></wm-gridrow><wm-gridrow name="gridrow6"><wm-gridcolumn columnwidth="12" name="gridcolumn13"><wm-composite name="composite7_1"><wm-label class="col-md-3 control-label p" name="label7" caption="Address"></wm-label><wm-container class="col-md-9" name="container7_1"><wm-text name="address"></wm-text></wm-container></wm-composite></wm-gridcolumn></wm-gridrow><wm-gridrow name="gridrow7"><wm-gridcolumn columnwidth="12" name="gridcolumn11"><wm-prefab prefabname="googlemaps" name="googlemaps1"></wm-prefab></wm-gridcolumn></wm-gridrow></wm-layoutgrid> -->
+                    <wm-form errormessage="" captionposition="top" title="First, let’s begin with some of your basic information." enctype="application/x-www-form-urlencoded" method="post" dataset="bind:Variables.sv_Get_Loan_Details_by_Id.dataSet" captionalign="left" name="md_createLoanApplicationForm1"
+                        on-submit="md_createLoanApplicationForm1Submit($event, widget, $formData)" show="true" formdata="bind:Variables.sv_Get_Customer_Details_By_Id.dataSet">
+                        <wm-layoutgrid columns="2" name="layoutgrid5_1">
+                            <wm-gridrow name="gridrow18_1">
+                                <wm-gridcolumn columnwidth="6" name="gridcolumn26_2">
+                                    <wm-form-field name="fname" displayname="First Name" show="true" placeholder="Enter text" type="string" key="fname" widget="text" inputtype="text" readonly="false" regexp="(([',. -][a-zA-Z ])?[a-zA-Z]*)*" required="true" validationmessage="Please Enter Valid First Name"></wm-form-field>
+                                </wm-gridcolumn>
+                                <wm-gridcolumn columnwidth="6" name="gridcolumn27_1">
+                                    <wm-form-field name="lname" displayname="Last Name" show="true" placeholder="Enter text" type="string" key="lname" widget="text" inputtype="text" readonly="false" regexp="(([',. -][a-zA-Z ])?[a-zA-Z]*)*" validationmessage="Please Enter Valid Last Name"
+                                        required="true" defaultvalue="bind:Variables.sv_Get_Customer_Details_By_Id.dataSet.lname"></wm-form-field>
+                                </wm-gridcolumn>
+                            </wm-gridrow>
+                            <wm-gridrow name="gridrow19_1">
+                                <wm-gridcolumn columnwidth="6" name="gridcolumn28_1">
+                                    <wm-form-field name="dob" displayname="Date Of Birth" show="true" placeholder="Select date" type="string" key="dob" widget="date" required="true" mindate="bind:getDobDate(&quot;min&quot;)" maxdate="bind:getDobDate(&quot;max&quot;)" validationmessage="Select Valid Dob"
+                                        defaultvalue="bind:Variables.sv_Get_Customer_Details_By_Id.dataSet.dob" datepattern="dd MMM, yyyy"></wm-form-field>
+                                </wm-gridcolumn>
+                                <wm-gridcolumn columnwidth="6" name="gridcolumn29">
+                                    <wm-form-field name="ssn" displayname="SSN Number" show="true" placeholder="Enter Number" type="string" key="ssn" widget="text" inputtype="text" readonly="false" required="true" validationmessage="Enter Valid Ssn " defaultvalue="bind:Variables.sv_Get_Customer_Details_By_Id.dataSet.ssnNo"
+                                        displayformat="999-99-9999"></wm-form-field>
+                                </wm-gridcolumn>
+                            </wm-gridrow>
+                            <wm-gridrow name="gridrow20_1">
+                                <wm-gridcolumn columnwidth="6" name="gridcolumn30">
+                                    <wm-form-field name="email" displayname="Email" show="true" placeholder="Enter text" type="string" key="email" widget="text" inputtype="text" readonly="false" regexp="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required="true" validationmessage="Enter Valid Email"
+                                        defaultvalue="bind:Variables.sv_Get_Customer_Details_By_Id.dataSet.email"></wm-form-field>
+                                </wm-gridcolumn>
+                                <wm-gridcolumn columnwidth="6" name="gridcolumn31_1">
+                                    <wm-form-field name="mobileno" displayname="Mobile Number" show="true" placeholder="Enter Number" type="string" key="mobileno" widget="text" inputtype="text" readonly="false" required="true" regexp="^\+?\d{1,3}[-\s]?\(?\d{1,4}\)?[-\s]?\d{1,4}[-\s]?\d{1,9}$"
+                                        validationmessage="Enter Valid Mobile Number" defaultvalue="bind:Variables.sv_Get_Customer_Details_By_Id.dataSet.mobileno" displayformat="(999) 999-9999"></wm-form-field>
+                                </wm-gridcolumn>
+                            </wm-gridrow>
+                            <wm-gridrow name="gridrow21_1">
+                                <wm-gridcolumn columnwidth="12" name="gridcolumn32_1">
+                                    <wm-form-field name="address" displayname="Address" show="true" placeholder="Enter text" type="string" key="address" widget="text" inputtype="text" readonly="false" on-change="addressChange($event, widget, newVal, oldVal)" required="true" regexp="^[a-zA-Z0-9\s.,#-]+$"
+                                        on-keyup="addressKeyup($event, widget)" defaultvalue="bind:Variables.sv_Get_Customer_Details_By_Id.dataSet.address"></wm-form-field>
+                                </wm-gridcolumn>
+                            </wm-gridrow>
+                            <wm-gridrow name="gridrow22_1">
+                                <wm-gridcolumn columnwidth="12" name="gridcolumn34_1" padding="unset 22px">
+                                    <wm-container name="container13_1">
+                                        <wm-prefab prefabname="googlemaps" name="googlemaps1" apikey="AIzaSyADRRvGAn-Q2TcJsk0uxZ0J-qPHmlXK24A" locations="bind:Variables.wsgetLatLongs.dataSet.results" lat="geometry.location.lat" lng="geometry.location.lng" class="app-prefab google-maps" height="400"></wm-prefab>
+                                    </wm-container>
+                                </wm-gridcolumn>
+                            </wm-gridrow>
+                        </wm-layoutgrid>
+                    </wm-form>
+                </wm-wizardstep>
+                <wm-wizardstep name="wizardstep2" iconclass="" title="Documents Upload">
+                    <wm-layoutgrid name="layoutgrid2_1">
+                        <wm-gridrow name="gridrow23_1">
+                            <wm-gridcolumn columnwidth="12" name="gridcolumn34_2" padding="unset 22px">
+                                <wm-label padding="unset" class="h2 font-semibold" caption="Now, Let's upload some essential documents. Once uploaded, E-sign each one." name="label23_1"></wm-label>
+                            </wm-gridcolumn>
+                        </wm-gridrow>
+                        <wm-gridrow name="gridrow6_1" padding="32px unset unset unset">
+                            <wm-gridcolumn columnwidth="6" name="gridcolumn9_1" padding="unset 22px">
+                                <wm-fileupload cleariconclass="wi wi-clear" cleariconhint="Clear" name="fileupload1" on-select="Variables.FileServiceUploadFile.invoke()" iconclass="lc-upload" caption="bind:'<span class= &quot;p&quot;> Drag &amp; drop files to upload </span>' + '<span class= &quot;line-break&quot;> or </span>' + '<span class= &quot;a-highlight&quot;> Browse from folders </span>'"
+                                    fileuploadmessage="Drop your files here or click here to browse" disabled="bind:Widgets.radioset1.datavalue == undefined" show="bind:Widgets.fileupload1.selectedFiles.length <= 0"></wm-fileupload>
+                                <wm-container name="esignContainer1" class="fileuploaded" show="bind:Widgets.fileupload1.selectedFiles.length > 0">
+                                    <wm-layoutgrid name="layoutgrid9">
+                                        <wm-gridrow name="gridrow28_1">
+                                            <wm-gridcolumn columnwidth="12" name="gridcolumn48" horizontalalign="center" padding="unset unset 3em unset">
+                                                <wm-icon name="icon5_2" class="pdf-red btn-default" iconclass="lc-pdf"></wm-icon>
+                                            </wm-gridcolumn>
+                                        </wm-gridrow>
+                                        <wm-gridrow name="gridrow29_1">
+                                            <wm-gridcolumn columnwidth="6" name="gridcolumn50" padding="unset unset unset 10px">
+                                                <wm-label padding="unset" caption="Driver's License" name="label33_1" class="font-medium"></wm-label>
+                                            </wm-gridcolumn>
+                                            <wm-gridcolumn columnwidth="6" name="gridcolumn53" horizontalalign="right" padding="unset 10px unset unset">
+                                                <wm-anchor margin="unset 0.5em" caption="E-Sign Completed" iconclass="lc-check gradient-green-icon" name="anchor7" class="text-muted"></wm-anchor>
+                                            </wm-gridcolumn>
+                                        </wm-gridrow>
+                                    </wm-layoutgrid>
+                                    <wm-prefab prefabname="EntityExtract_V2" name="EntityExtract_V22" url="bind:Variables.md_Extracted_Field_Params_Dr_License.dataSet.url" entities="bind:Variables.md_Extracted_Field_Params_Dr_License.dataSet.params" show="false"></wm-prefab>
+                                </wm-container>
+                            </wm-gridcolumn>
+                            <wm-gridcolumn columnwidth="6" name="gridcolumn10_1" padding="unset 22px">
+                                <wm-fileupload cleariconclass="wi wi-clear" cleariconhint="Clear" name="fileupload2" on-select="Variables.FileServiceUploadFile1.invoke()" iconclass="lc-upload" caption="bind:'<span class= &quot;p&quot;> Drag &amp; drop files to upload </span>' + '<span class= &quot;line-break&quot;> or </span>' + '<span class= &quot;a-highlight&quot;> Browse from folders </span>'"
+                                    show="bind:Widgets.fileupload2.selectedFiles.length <= 0"></wm-fileupload>
+                                <wm-container name="esignContainer2" class="fileuploaded" show="bind:Widgets.fileupload2.selectedFiles.length > 0">
+                                    <wm-layoutgrid name="layoutgrid10">
+                                        <wm-gridrow name="gridrow30">
+                                            <wm-gridcolumn columnwidth="12" name="gridcolumn52" horizontalalign="center" padding="unset unset 3em unset">
+                                                <wm-icon name="icon5_1" iconclass="lc-pdf" class="pdf-red btn-default"></wm-icon>
+                                            </wm-gridcolumn>
+                                        </wm-gridrow>
+                                        <wm-gridrow name="gridrow31">
+                                            <wm-gridcolumn columnwidth="6" name="gridcolumn54" padding="unset unset unset 10px">
+                                                <wm-label padding="unset" name="label31_1" caption="W2 form.pdf" class="font-medium"></wm-label>
+                                            </wm-gridcolumn>
+                                            <wm-gridcolumn columnwidth="6" name="gridcolumn52_1" horizontalalign="right" padding="unset 10px unset unset">
+                                                <wm-anchor margin="unset 0.5em" iconclass="lc-check gradient-green-icon" caption="E-Sign Completed" class="text-muted" name="anchor5"></wm-anchor>
+                                            </wm-gridcolumn>
+                                        </wm-gridrow>
+                                    </wm-layoutgrid>
+                                </wm-container>
+                                <wm-prefab prefabname="EntityExtract_V2" name="EntityExtract_V23" url="bind:Variables.md_Extracted_Field_Params_W2_Form.dataSet.url" entities="bind:Variables.md_Extracted_Field_Params_W2_Form.dataSet.params" show="false"></wm-prefab>
+                            </wm-gridcolumn>
+                        </wm-gridrow>
+                        <wm-gridrow name="gridrow25_1">
+                            <wm-gridcolumn columnwidth="6" name="gridcolumn37_1" padding="unset 22px"></wm-gridcolumn>
+                            <wm-gridcolumn columnwidth="6" name="gridcolumn38_1" padding="unset 22px"></wm-gridcolumn>
+                        </wm-gridrow>
+                        <wm-gridrow name="gridrow7_1">
+                            <wm-gridcolumn columnwidth="6" name="gridcolumn11_1" padding="20px 22px unset 22px">
+                                <wm-composite name="composite8" show="true" captionposition="top">
+                                    <wm-container name="container8">
+                                        <wm-radioset height="auto" name="radioset1" dataset="Passport, Driving License" datafield="All Fields" class="flex-inline" on-change="radioset1Change($event, widget, newVal, oldVal)"></wm-radioset>
+                                    </wm-container>
+                                </wm-composite>
+                            </wm-gridcolumn>
+                            <wm-gridcolumn columnwidth="6" name="gridcolumn12" padding="25px 22px unset 22px">
+                                <wm-label padding="unset" name="label30_1" caption="W2" margin="5px unset unset unset"></wm-label>
+                            </wm-gridcolumn>
+                        </wm-gridrow>
+                    </wm-layoutgrid>
+                </wm-wizardstep>
+                <wm-wizardstep name="wizardstep3" iconclass="" title="Loan Details" on-next="wizardstep3Next(widget, currentStep, stepIndex)">
+                    <wm-layoutgrid name="layoutgrid3">
+                        <wm-gridrow name="gridrow8">
+                            <wm-gridcolumn columnwidth="6" name="gridcolumn13_1" padding="unset 1.5em unset 1em">
+                                <wm-label padding="unset" name="label11_1" class="h1 font-semibold" caption="Loan Details"></wm-label>
+                                <wm-label padding="unset" name="label12_1" class="text-muted font-small" caption="Specify your loan requirements below" margin="unset unset 2em unset"></wm-label>
+                                <wm-composite name="composite9" class="flex-inline v-center h-center">
+                                    <wm-label class="col-xs-8 font-h3 font-medium" name="label13_1" caption="Loan Amount"></wm-label>
+                                    <wm-container class="col-xs-4" name="container22_1">
+                                        <wm-text datavalue="bind:Widgets.amountSlider.datavalue | toCurrency: '$'" on-change="text1Change($event, widget, newVal, oldVal)" class="input-sm form-control app-textbox" name="text3_1" textalign="right"></wm-text>
+                                    </wm-container>
+                                </wm-composite>
+                                <wm-composite name="composite10">
+                                    <wm-label class="col-md-3 control-label" name="label14_1" show="false"></wm-label>
+                                    <wm-container name="container10">
+                                        <wm-slider name="amountSlider" minvalue="0" maxvalue="500000" datavalue="0" on-change="amountSliderChange($event, widget, newVal, oldVal)" class="amount-slider"></wm-slider>
+                                    </wm-container>
+                                </wm-composite>
+                                <wm-composite name="composite11">
+                                    <wm-composite name="composite13" class="flex">
+                                        <wm-label class="col-xs-8 font-h3 font-medium" name="label17" caption="Loan Tenure"></wm-label>
+                                        <wm-container class="col-xs-4" name="container23">
+                                            <wm-text datavalue="bind:&quot;Y &quot;+Widgets.tenureSlider.datavalue" on-change="text2Change($event, widget, newVal, oldVal)" name="text3" class="input-sm form-control app-textbox" textalign="right"></wm-text>
+                                        </wm-container>
+                                    </wm-composite>
+                                    <wm-label class="col-md-3 control-label" name="label15" show="false"></wm-label>
+                                    <wm-container name="container11">
+                                        <wm-slider name="tenureSlider" maxvalue="20" datavalue="0" on-change="tenureSliderChange($event, widget, newVal, oldVal)" minvalue="1" class="tenure-slider"></wm-slider>
+                                    </wm-container>
+                                </wm-composite>
+                                <wm-prefab prefabname="EmiCalc" name="EmiCalc1"></wm-prefab>
+                            </wm-gridcolumn>
+                            <wm-gridcolumn columnwidth="6" name="gridcolumn14" padding="unset 1em unset 1.5em">
+                                <wm-container name="container18" class="gridcontainer" margin="unset unset 15px unset">
+                                    <wm-layoutgrid name="layoutgrid6">
+                                        <wm-gridrow name="gridrow24_1">
+                                            <wm-gridcolumn columnwidth="5" name="gridcolumn33_1" padding="unset unset 20px unset" horizontalalign="left">
+                                                <wm-label padding="unset" caption="Repayment Details" class="font-extrasmall p" margin="0px unset" name="label32_1"></wm-label>
+                                            </wm-gridcolumn>
+                                            <wm-gridcolumn columnwidth="7" name="gridcolumn41_1" horizontalalign="right">
+                                                <wm-label padding="unset" caption="bind:&quot;$&quot;+Widgets.amountSlider.datavalue +&quot;/&quot;+Widgets.tenureSlider.datavalue+&quot; Years&quot;" class=" h3 font-semibold" margin="0px unset" name="label31"></wm-label>
+                                            </wm-gridcolumn>
+                                        </wm-gridrow>
+                                        <wm-gridrow name="gridrow25">
+                                            <wm-gridcolumn columnwidth="3" name="gridcolumn32_3"></wm-gridcolumn>
+                                            <wm-gridcolumn columnwidth="6" name="gridcolumn34_3">
+                                                <wm-progress-circle width="150px" height="150px" datavalue="bind:100 - Variables.mdCalculatedLoanAmount.dataSet.InterestPercentage" name="progress_circle2" show="true"></wm-progress-circle>
+                                                <wm-chart type="Donut" title="Donut Chart" height="250px" iconclass="wi wi-donut-large" show="false" name="chart2"></wm-chart>
+                                            </wm-gridcolumn>
+                                            <wm-gridcolumn columnwidth="3" name="gridcolumn34_4"></wm-gridcolumn>
+                                        </wm-gridrow>
+                                        <wm-gridrow name="gridrow26">
+                                            <wm-gridcolumn columnwidth="12" name="gridcolumn35_1">
+                                                <wm-container name="container22" class="flex v-center r-space-between">
+                                                    <wm-container name="container24" class="flex-inline v-center">
+                                                        <wm-icon iconclass="lc-bullet" name="icon5" class="circle-gray"></wm-icon>
+                                                        <wm-label padding="unset unset unset 5px" caption="Interest Rate Per Annum" class="p font-xxsmall" name="label26" margin="unset unset 0px unset"></wm-label>
+                                                    </wm-container>
+                                                    <wm-container class="flex v-center r-space-between" name="container25_1" padding="unset unset unset 12px">
+                                                        <wm-icon name="icon6" iconclass="lc-bullet" class="circle-purple"></wm-icon>
+                                                        <wm-label padding="unset unset unset 5px" caption="Principal Loan Amount" class="p font-xxsmall text-muted" name="label27_1" margin="unset unset 0px unset"></wm-label>
+                                                    </wm-container>
+                                                </wm-container>
+                                            </wm-gridcolumn>
+                                        </wm-gridrow>
+                                        <wm-gridrow name="gridrow27">
+                                            <wm-gridcolumn columnwidth="12" name="gridcolumn33_3" padding="20px unset">
+                                                <wm-container name="container26" class=" btn-block bg-white switch-boxshadow flex-inline v-center">
+                                                    <wm-layoutgrid name="layoutgrid7">
+                                                        <wm-gridrow name="gridrow26_1">
+                                                            <wm-gridcolumn columnwidth="6" name="gridcolumn39" class="border-right">
+                                                                <wm-container name="container25_2">
+                                                                    <wm-label padding="unset" caption="Interest Rate" name="label27" class="text-uppercase text-muted"></wm-label>
+                                                                    <wm-label padding="unset" class="h2" caption="bind:Variables.md_Interest_Rate.dataSet.dataValue  | suffix: '%'" name="label28" margin="0px"></wm-label>
+                                                                </wm-container>
+                                                            </wm-gridcolumn>
+                                                            <wm-gridcolumn columnwidth="6" name="gridcolumn40_1" horizontalalign="right">
+                                                                <wm-container name="container26_1">
+                                                                    <wm-label padding="unset" caption="Interest Amount" name="label29" class="text-uppercase text-muted"></wm-label>
+                                                                    <wm-label padding="unset" class="h2" caption="bind:Variables.mdCalculatedLoanAmount.dataSet.InterestAmt | toCurrency: '$'" name="label30" margin="0px"></wm-label>
+                                                                </wm-container>
+                                                            </wm-gridcolumn>
+                                                        </wm-gridrow>
+                                                    </wm-layoutgrid>
+                                                </wm-container>
+                                            </wm-gridcolumn>
+                                        </wm-gridrow>
+                                        <wm-gridrow name="gridrow28" padding="15px unset 12px unset">
+                                            <wm-gridcolumn columnwidth="3" name="gridcolumn38">
+                                                <wm-label padding="5px unset unset unset" caption="Loan EMI" class="p text-muted flex v-center " name="label24_2"></wm-label>
+                                            </wm-gridcolumn>
+                                            <wm-gridcolumn columnwidth="9" name="gridcolumn32_2">
+                                                <wm-composite name="composite11_1">
+                                                    <wm-container name="container25">
+                                                        <wm-switch datavalue="Monthly" dataset="Weekly,  Fortnightly,  Monthly" on-change="switch1Change($event, widget, newVal, oldVal)" name="switch4" class="btn-xs"></wm-switch>
+                                                    </wm-container>
+                                                </wm-composite>
+                                            </wm-gridcolumn>
+                                        </wm-gridrow>
+                                        <wm-gridrow name="gridrow29" padding="unset unset 12px unset">
+                                            <wm-gridcolumn columnwidth="12" name="gridcolumn40">
+                                                <wm-label padding="unset" class="p font-large font-medium" caption="bind:&quot;$ &quot;+Variables.mdCalculatedLoanAmount.dataSet.Emi +&quot;/&quot;+Widgets.switch4.datavalue" name="label32"></wm-label>
+                                            </wm-gridcolumn>
+                                            <wm-gridcolumn columnwidth="12" name="gridcolumn41" padding="20px unset unset unset">
+                                                <wm-label padding="unset" caption="Total Payment (Principal + Interest)" class="text-muted" name="label33"></wm-label>
+                                                <wm-label padding="unset" class="p font-large font-medium" caption="bind:Variables.mdCalculatedLoanAmount.dataSet.TotalPayment | toCurrency: '$'" name="label34"></wm-label>
+                                            </wm-gridcolumn>
+                                        </wm-gridrow>
+                                    </wm-layoutgrid>
+                                </wm-container>
+                            </wm-gridcolumn>
+                        </wm-gridrow>
+                    </wm-layoutgrid>
+                </wm-wizardstep>
+                <wm-wizardstep name="wizardstep4" title="Review Application" on-load="wizardstep4Load(widget, stepIndex)">
+                    <wm-layoutgrid name="layoutgrid5">
+                        <wm-gridrow name="gridrow15_1">
+                            <wm-gridcolumn columnwidth="12" name="gridcolumn26_1">
+                                <wm-label padding="unset" name="label28_1" class="h1 font-semibold" caption="Review Application" margin="unset unset 12px unset"></wm-label>
+                                <wm-label padding="unset unset 20px unset" name="label29_1" class="font-small text-muted" caption="Review your application thoroughly before submitting. Load decision are given instantly."></wm-label>
+                            </wm-gridcolumn>
+                        </wm-gridrow>
+                        <wm-gridrow name="gridrow18">
+                            <wm-gridcolumn columnwidth="12" name="gridcolumn31">
+                                <wm-container name="container14_1" content="detailsPartial">
+                                    <wm-param name="heading" value="personal Details" type="string"></wm-param>
+                                    <wm-param name="details" value="bind:getCustomerData(Widgets.md_createLoanApplicationForm1.dataoutput)" type="string"></wm-param>
+                                </wm-container>
+                            </wm-gridcolumn>
+                        </wm-gridrow>
+                        <wm-gridrow name="gridrow19">
+                            <wm-gridcolumn columnwidth="12" name="gridcolumn32">
+                                <wm-container name="container17" content="detailsPartial">
+                                    <wm-param name="heading" value="Documents Uploaded" type="string"></wm-param>
+                                    <wm-param name="details" value="bind:Variables.mdTestData.dataSet.dd" type="string"></wm-param>
+                                </wm-container>
+                            </wm-gridcolumn>
+                        </wm-gridrow>
+                        <wm-gridrow name="gridrow20">
+                            <wm-gridcolumn columnwidth="12" name="gridcolumn33">
+                                <wm-container name="container15" content="detailsPartial">
+                                    <wm-param name="heading" value="Extract Field Information" type="string"></wm-param>
+                                    <wm-param name="details" value="bind:getExtractedData(Variables.md_createLoanApplication.dataSet.document[0].docExtractData)" type="string"></wm-param>
+                                </wm-container>
+                            </wm-gridcolumn>
+                        </wm-gridrow>
+                        <wm-gridrow name="gridrow21">
+                            <wm-gridcolumn columnwidth="12" name="gridcolumn34"></wm-gridcolumn>
+                        </wm-gridrow>
+                        <wm-gridrow name="gridrow22">
+                            <wm-gridcolumn columnwidth="12" name="gridcolumn35">
+                                <wm-container name="container16" content="detailsPartial">
+                                    <wm-param name="heading" value="Loan Details" type="string"></wm-param>
+                                    <wm-param name="details" value="bind:getLoanData()" type="string"></wm-param>
+                                </wm-container>
+                            </wm-gridcolumn>
+                        </wm-gridrow>
+                        <wm-gridrow name="gridrow23">
+                            <wm-gridcolumn columnwidth="12" name="gridcolumn36"></wm-gridcolumn>
+                        </wm-gridrow>
+                        <wm-gridrow name="gridrow24">
+                            <wm-gridcolumn columnwidth="12" name="gridcolumn37"></wm-gridcolumn>
+                        </wm-gridrow>
+                    </wm-layoutgrid>
+                </wm-wizardstep>
+                <wm-container name="container14_2">
+                    <wm-prefab prefabname="EntityExtract_V2" name="EntityExtract_V21" url="bind:Variables.md_labels.dataSet.dataValue" entities="bind:Variables.md_Extracted_Field_Params.dataSet" show="false"></wm-prefab>
+                </wm-container>
+            </wm-wizard>
+        </wm-page-content>
+    </wm-content>
+    <wm-dialog dialogtype="design-dialog" modal="true" title="Verify Otp" iconclass="" name="userValidationDialog">
+        <wm-container name="container1" class="text-center">
+            <wm-label padding="unset 10px unset unset" name="label6" caption="Please Enter OTP sent to" class="font-small"></wm-label>
+            <wm-label padding="unset" name="label7" caption="bind:Variables.md_createLoanApplication.dataSet.customerDetails.mobileno  | custom: 'maskPhoneNumber'" class="font-small font-semibold"></wm-label>
+            <wm-label padding="unset" name="label8" class="font-small font-semibold" caption="bind:Variables.md_createLoanApplication.dataSet.customerDetails.email | custom: 'maskEmail'" show="false"></wm-label>
+        </wm-container>
+        <wm-composite name="composite1" horizontalalign="center" padding="unset 5em">
+            <wm-container class="col-md-12" name="container2" padding="unset unset 30px unset"></wm-container>
+            <wm-composite name="composite8">
+                <wm-layoutgrid name="layoutgrid1" class="condensed otp-form-group" show="false">
+                    <wm-gridrow name="gridrow3">
+                        <wm-gridcolumn columnwidth="2" name="gridcolumn5">
+                            <wm-composite name="composite2">
+                                <wm-container class="col-md-9" name="container3">
+                                    <wm-text name="text1" maxchars="1" autofocus="false" on-change="text1Change($event, widget, newVal, oldVal)" on-keyup="text1Keyup($event, widget)" placeholder="" textalign="center"></wm-text>
+                                </wm-container>
+                            </wm-composite>
+                        </wm-gridcolumn>
+                        <wm-gridcolumn columnwidth="2" name="gridcolumn6">
+                            <wm-composite name="composite3">
+                                <wm-container class="col-md-9" name="container4">
+                                    <wm-text name="text2" on-keyup="text2Keyup($event, widget)" placeholder="" maxchars="1" textalign="center"></wm-text>
+                                </wm-container>
+                            </wm-composite>
+                        </wm-gridcolumn>
+                        <wm-gridcolumn columnwidth="2" name="gridcolumn7">
+                            <wm-composite name="composite4">
+                                <wm-container class="col-md-9" name="container5">
+                                    <wm-text name="text3" on-keyup="text3Keyup($event, widget)" placeholder="" maxchars="1" textalign="center"></wm-text>
+                                </wm-container>
+                            </wm-composite>
+                        </wm-gridcolumn>
+                        <wm-gridcolumn columnwidth="2" name="gridcolumn8">
+                            <wm-composite name="composite5">
+                                <wm-container class="col-md-9" name="container6">
+                                    <wm-text name="text4" on-keyup="text4Keyup($event, widget)" placeholder="" maxchars="1" textalign="center"></wm-text>
+                                </wm-container>
+                            </wm-composite>
+                        </wm-gridcolumn>
+                        <wm-gridcolumn columnwidth="2" name="gridcolumn9">
+                            <wm-composite name="composite6">
+                                <wm-container class="col-md-9" name="container7">
+                                    <wm-text name="text5" on-keyup="text5Keyup($event, widget)" placeholder="" maxchars="1" textalign="center"></wm-text>
+                                </wm-container>
+                            </wm-composite>
+                        </wm-gridcolumn>
+                        <wm-gridcolumn columnwidth="2" name="gridcolumn10">
+                            <wm-composite name="composite7">
+                                <wm-container class="col-md-9" name="container8">
+                                    <wm-text name="text6" placeholder="" maxchars="1" textalign="center"></wm-text>
+                                </wm-container>
+                            </wm-composite>
+                        </wm-gridcolumn>
+                    </wm-gridrow>
+                </wm-layoutgrid>
+                <wm-prefab prefabname="OtpModule" name="OtpModule1"></wm-prefab>
+                <wm-label padding="unset" name="label10" caption="I didn't Recieve a Code "></wm-label>
+                <wm-anchor margin="unset 0.5em" name="anchor1" caption="Resend Otp"></wm-anchor>
+            </wm-composite>
+            <wm-composite name="composite1" horizontalalign="center" padding="unset 5em">
+                <!-- <wm-container class="col-md-12" name="container2" padding="unset unset 30px unset">
+<wm-number textalign="left" name="otpField" placeholder="Enter OTP to validate"></wm-number></wm-container> -->
+                <wm-button class="btn-secondary btn-block" caption="verify" type="button" margin="unset" name="validateOtp" on-click="validateOtpClick($event, widget)"></wm-button>
+            </wm-composite>
+        </wm-composite>
+    </wm-dialog>
+    <wm-dialog dialogtype="design-dialog" modal="true" title="" iconclass="lc-check icon-check" name="seuccesDialog1" iconwidth="50px" iconheight="50px">
+        <wm-layoutgrid name="layoutgrid8">
+            <wm-gridrow name="gridrow26_2">
+                <wm-gridcolumn columnwidth="1" name="gridcolumn43">
+                    <wm-label padding="unset 0.5em" caption="" name="label26_1"></wm-label>
+                </wm-gridcolumn>
+                <wm-gridcolumn columnwidth="10" name="gridcolumn44" horizontalalign="center">
+                    <wm-label padding="unset 0.5em" caption="Your application saved as draft. Please continue the next steps." name="label27_2" class="font-semibold font-h4"></wm-label>
+                </wm-gridcolumn>
+                <wm-gridcolumn columnwidth="1" name="gridcolumn47"></wm-gridcolumn>
+            </wm-gridrow>
+        </wm-layoutgrid>
+        <wm-dialogactions name="dialogactions2">
+            <wm-button class="btn-secondary" caption="Close" on-click="closeDialog()" name="button3"></wm-button>
+        </wm-dialogactions>
+    </wm-dialog>
+</wm-page>
