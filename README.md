@@ -1,6 +1,6 @@
 # About
 Loancorp V2 is an application that enables users to apply for a loan in just a few steps, whether they are existing or new customers. It offers a direct approach for a smooth loan application process. Additionally, it allows loan officers to review all applied loans based on the loan details, enabling them to approve, reject, or provide alternate offers to the customer. 
-[Click Here](https://showcase.onwavemaker.com/Loancorpv2/) for more details on Turbo Mobiles app
+[Click Here](https://showcase.onwavemaker.com/Loancorpv2/) for more details on LoanCorp V2 app
 
 ## Customer Persona: 
 - Customer can submit the Application
