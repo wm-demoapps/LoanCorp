@@ -30,6 +30,10 @@ Calculates EMI for the entered values of tenure and loan amount with a predefine
 ### Otp Module
 The OTP module enables users to enter OTPs into text fields with auto focus.
 
+### Note:
+- Mandatory to provide Database connection Details [Click Here](https://github.com/wm-demoapps/LoanCorp/blob/main/LoanCorpV2_20_feb_2024.sql) to get DB script
+
+# Information about Project Folder Structure and Files
 ## pom.xml
   Add any maven dependencies to this file. Dependencies declared in this file will be available on the classpath.
 
